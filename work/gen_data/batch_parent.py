@@ -1,6 +1,7 @@
 import useCase as uc
 import infracstucture
 import json
+import uuid
 
 
 # GoogleMapsAPIからレストランデータを取得し、マスタデータを生成
@@ -22,7 +23,7 @@ def main():
 
     restaurant_data_list = [
         {
-            "id": idx,
+            "id": uuid.uuid4().hex,
             "placeId": e1["id"],
             "displayName": e1["displayName"]["text"],
             "priceLevel": e1["priceLevel"] if "priceLevel" in e1 else None,

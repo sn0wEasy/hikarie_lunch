@@ -1,5 +1,5 @@
 export interface RestaurantForList {
-    readonly id: number;
+    readonly id: string;
     readonly placeId: string;
     readonly displayName: string;
     readonly thumbnailPhotoUrl: string;
@@ -22,7 +22,7 @@ export interface OpeningDays {
 }
 
 export interface RestaurantForDetail {
-    readonly id: number;
+    readonly id: string;
     readonly placeId: string;
     readonly displayName: string;
     readonly priceLevel: PriceLevel;
