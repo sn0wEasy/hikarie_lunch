@@ -1,0 +1,5 @@
+**/node_modules
+**/.env
+.venv
+.tool-versions
+work/gen_data/restaurant_list.json

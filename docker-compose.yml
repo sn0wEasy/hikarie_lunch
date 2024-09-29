@@ -1,0 +1,12 @@
+services:
+  app:
+    image: node:current-slim
+    ports:
+      - 3000:3000
+    environment:
+      TZ: Asia/Tokyo
+    working_dir: /usr/src/app
+    volumes:
+      - ./app:/usr/src/app
+    stdin_open: true
+    tty: true

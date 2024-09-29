@@ -1,0 +1,648 @@
+{
+    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII",
+    "id": "ChIJGQivCliLGGARQGD2vV8CIII",
+    "types": [
+        "cafe",
+        "coffee_shop",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+    ],
+    "nationalPhoneNumber": "03-3400-9088",
+    "internationalPhoneNumber": "+81 3-3400-9088",
+    "formattedAddress": "〒150-0002 東京都渋谷区渋谷１丁目１５−１９",
+    "addressComponents": [
+        {
+            "longText": "１９",
+            "shortText": "１９",
+            "types": [
+                "premise"
+            ],
+            "languageCode": "ja"
+        },
+        {
+            "longText": "１５",
+            "shortText": "１５",
+            "types": [
+                "sublocality_level_4",
+                "sublocality",
+                "political"
+            ],
+            "languageCode": "ja"
+        },
+        {
+            "longText": "１丁目",
+            "shortText": "１丁目",
+            "types": [
+                "sublocality_level_3",
+                "sublocality",
+                "political"
+            ],
+            "languageCode": "ja"
+        },
+        {
+            "longText": "渋谷",
+            "shortText": "渋谷",
+            "types": [
+                "sublocality_level_2",
+                "sublocality",
+                "political"
+            ],
+            "languageCode": "ja"
+        },
+        {
+            "longText": "渋谷区",
+            "shortText": "渋谷区",
+            "types": [
+                "locality",
+                "political"
+            ],
+            "languageCode": "ja"
+        },
+        {
+            "longText": "東京都",
+            "shortText": "東京都",
+            "types": [
+                "administrative_area_level_1",
+                "political"
+            ],
+            "languageCode": "ja"
+        },
+        {
+            "longText": "日本",
+            "shortText": "JP",
+            "types": [
+                "country",
+                "political"
+            ],
+            "languageCode": "ja"
+        },
+        {
+            "longText": "150-0002",
+            "shortText": "150-0002",
+            "types": [
+                "postal_code"
+            ],
+            "languageCode": "ja"
+        }
+    ],
+    "plusCode": {
+        "globalCode": "8Q7XMP63+54",
+        "compoundCode": "MP63+54 東京都渋谷区"
+    },
+    "location": {
+        "latitude": 35.660461399999996,
+        "longitude": 139.7027761
+    },
+    "viewport": {
+        "low": {
+            "latitude": 35.659098469708496,
+            "longitude": 139.70142641970853
+        },
+        "high": {
+            "latitude": 35.661796430291496,
+            "longitude": 139.7041243802915
+        }
+    },
+    "rating": 4.1,
+    "googleMapsUri": "https://maps.google.com/?cid=9376497034417561664",
+    "websiteUri": "https://www.instagram.com/hatou_coffee_shibuya/",
+    "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+            {
+                "open": {
+                    "day": 0,
+                    "hour": 11,
+                    "minute": 0
+                },
+                "close": {
+                    "day": 0,
+                    "hour": 23,
+                    "minute": 0
+                }
+            },
+            {
+                "open": {
+                    "day": 1,
+                    "hour": 11,
+                    "minute": 0
+                },
+                "close": {
+                    "day": 1,
+                    "hour": 23,
+                    "minute": 0
+                }
+            },
+            {
+                "open": {
+                    "day": 2,
+                    "hour": 11,
+                    "minute": 0
+                },
+                "close": {
+                    "day": 2,
+                    "hour": 23,
+                    "minute": 0
+                }
+            },
+            {
+                "open": {
+                    "day": 3,
+                    "hour": 11,
+                    "minute": 0
+                },
+                "close": {
+                    "day": 3,
+                    "hour": 23,
+                    "minute": 0
+                }
+            },
+            {
+                "open": {
+                    "day": 4,
+                    "hour": 11,
+                    "minute": 0
+                },
+                "close": {
+                    "day": 4,
+                    "hour": 23,
+                    "minute": 0
+                }
+            },
+            {
+                "open": {
+                    "day": 5,
+                    "hour": 11,
+                    "minute": 0
+                },
+                "close": {
+                    "day": 5,
+                    "hour": 23,
+                    "minute": 0
+                }
+            },
+            {
+                "open": {
+                    "day": 6,
+                    "hour": 11,
+                    "minute": 0
+                },
+                "close": {
+                    "day": 6,
+                    "hour": 23,
+                    "minute": 0
+                }
+            }
+        ],
+        "weekdayDescriptions": [
+            "月曜日: 11時00分～23時00分",
+            "火曜日: 11時00分～23時00分",
+            "水曜日: 11時00分～23時00分",
+            "木曜日: 11時00分～23時00分",
+            "金曜日: 11時00分～23時00分",
+            "土曜日: 11時00分～23時00分",
+            "日曜日: 11時00分～23時00分"
+        ]
+    },
+    "utcOffsetMinutes": 540,
+    "adrFormatAddress": "<span class=\"country-name\">日本</span>、<span class=\"postal-code\">〒150-0002</span> <span class=\"region\">東京都</span><span class=\"street-address\">渋谷区渋谷１丁目１５−１９</span>",
+    "businessStatus": "OPERATIONAL",
+    "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+    "userRatingCount": 1632,
+    "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "iconBackgroundColor": "#FF9E67",
+    "displayName": {
+        "text": "茶亭 羽當 渋谷",
+        "languageCode": "ja"
+    },
+    "primaryTypeDisplayName": {
+        "text": "カフェ・喫茶",
+        "languageCode": "ja"
+    },
+    "takeout": true,
+    "delivery": false,
+    "dineIn": true,
+    "servesLunch": true,
+    "servesDinner": false,
+    "servesBeer": false,
+    "servesWine": true,
+    "servesVegetarianFood": false,
+    "currentOpeningHours": {
+        "openNow": true,
+        "periods": [
+            {
+                "open": {
+                    "day": 0,
+                    "hour": 11,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 22
+                    }
+                },
+                "close": {
+                    "day": 0,
+                    "hour": 23,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 22
+                    }
+                }
+            },
+            {
+                "open": {
+                    "day": 1,
+                    "hour": 11,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 16
+                    }
+                },
+                "close": {
+                    "day": 1,
+                    "hour": 23,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 16
+                    }
+                }
+            },
+            {
+                "open": {
+                    "day": 2,
+                    "hour": 11,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 17
+                    }
+                },
+                "close": {
+                    "day": 2,
+                    "hour": 23,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 17
+                    }
+                }
+            },
+            {
+                "open": {
+                    "day": 3,
+                    "hour": 11,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 18
+                    }
+                },
+                "close": {
+                    "day": 3,
+                    "hour": 23,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 18
+                    }
+                }
+            },
+            {
+                "open": {
+                    "day": 4,
+                    "hour": 11,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 19
+                    }
+                },
+                "close": {
+                    "day": 4,
+                    "hour": 23,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 19
+                    }
+                }
+            },
+            {
+                "open": {
+                    "day": 5,
+                    "hour": 11,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 20
+                    }
+                },
+                "close": {
+                    "day": 5,
+                    "hour": 23,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 20
+                    }
+                }
+            },
+            {
+                "open": {
+                    "day": 6,
+                    "hour": 11,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 21
+                    }
+                },
+                "close": {
+                    "day": 6,
+                    "hour": 23,
+                    "minute": 0,
+                    "date": {
+                        "year": 2024,
+                        "month": 9,
+                        "day": 21
+                    }
+                }
+            }
+        ],
+        "weekdayDescriptions": [
+            "月曜日: 11時00分～23時00分",
+            "火曜日: 11時00分～23時00分",
+            "水曜日: 11時00分～23時00分",
+            "木曜日: 11時00分～23時00分",
+            "金曜日: 11時00分～23時00分",
+            "土曜日: 11時00分～23時00分",
+            "日曜日: 11時00分～23時00分"
+        ]
+    },
+    "primaryType": "cafe",
+    "shortFormattedAddress": "渋谷区渋谷１丁目１５−１９",
+    "editorialSummary": {
+        "text": "カラフルなコーヒーカップが棚に積まれた居心地のよいカフェ。コーヒーとさまざまなケーキを提供。",
+        "languageCode": "ja"
+    },
+    "reviews": [
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChdDSUhNMG9nS0VJQ0FnSURicF95Sm1RRRAB",
+            "relativePublishTimeDescription": "1 か月前",
+            "rating": 5,
+            "text": {
+                "text": "コーヒーとバナナシフォンケーキを注文。\n苦みが上品でコクのあるグアテマラ、ふくよかな甘みのあるバナナシフォンケーキの組み合わせをおすすめしたい。\nコーヒーは深煎りながら香りに甘みが感じられる。バナナシフォンケーキはミント風味のホイップクリームやチョコレートのコーティングが演出して色々な味わい方が楽しめる。バナナのトロピカルな風味とコーヒーの奥深さが幾重にも感じられる。\n暖色の店内照明とジャズが成すリラックス空間が落ち着きを与えてくれる。カウンター越しに色とりどりのアンティークカップを眺めながらゆっくり過ごせる時間は至福の一時。",
+                "languageCode": "ja"
+            },
+            "originalText": {
+                "text": "コーヒーとバナナシフォンケーキを注文。\n苦みが上品でコクのあるグアテマラ、ふくよかな甘みのあるバナナシフォンケーキの組み合わせをおすすめしたい。\nコーヒーは深煎りながら香りに甘みが感じられる。バナナシフォンケーキはミント風味のホイップクリームやチョコレートのコーティングが演出して色々な味わい方が楽しめる。バナナのトロピカルな風味とコーヒーの奥深さが幾重にも感じられる。\n暖色の店内照明とジャズが成すリラックス空間が落ち着きを与えてくれる。カウンター越しに色とりどりのアンティークカップを眺めながらゆっくり過ごせる時間は至福の一時。",
+                "languageCode": "ja"
+            },
+            "authorAttribution": {
+                "displayName": "M T",
+                "uri": "https://www.google.com/maps/contrib/110113567546810529410/reviews",
+                "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVKXEzr77gydiMTIv0PwVqmh0CX1GZDBLCfp9zHHNXDGSO0X4Si=s128-c0x00000000-cc-rp-mo-ba2"
+            },
+            "publishTime": "2024-08-10T04:26:52Z"
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChdDSUhNMG9nS0VJQ0FnSUNIcnZXZjNRRRAB",
+            "relativePublishTimeDescription": "1 週間前",
+            "rating": 4,
+            "text": {
+                "text": "客を選ぶ。静かに過ごしたい方とは相性が良い。アイスコーヒーの氷は注文後に削ってる。喫煙所あり。\n\n口コミの通り接客は必要最低限です、私見ですが声の大きい客やSNS素材を撮りにきてるような客には冷たくあしらっていたように感じます。そういう意味で客を選ぶという感想。私は一人で手帳の整理がてら涼みに行ったのでその極端なサービスのお陰でとても過ごしやすかったです。",
+                "languageCode": "ja"
+            },
+            "originalText": {
+                "text": "客を選ぶ。静かに過ごしたい方とは相性が良い。アイスコーヒーの氷は注文後に削ってる。喫煙所あり。\n\n口コミの通り接客は必要最低限です、私見ですが声の大きい客やSNS素材を撮りにきてるような客には冷たくあしらっていたように感じます。そういう意味で客を選ぶという感想。私は一人で手帳の整理がてら涼みに行ったのでその極端なサービスのお陰でとても過ごしやすかったです。",
+                "languageCode": "ja"
+            },
+            "authorAttribution": {
+                "displayName": "Yuji K",
+                "uri": "https://www.google.com/maps/contrib/117597915779721155464/reviews",
+                "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUbs5Y8HrQ7lman_72YKav6inRHfLWk9y5nwP03OEZIZmMoHHltQg=s128-c0x00000000-cc-rp-mo-ba4"
+            },
+            "publishTime": "2024-09-05T05:50:05Z"
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChdDSUhNMG9nS0VJQ0FnSUNMMVl2YmtnRRAB",
+            "relativePublishTimeDescription": "1 か月前",
+            "rating": 5,
+            "text": {
+                "text": "金曜の16時過ぎに再訪。\n店内は賑わっていましたが、待たずにカウンターに案内していただけました。\n\nオレグラッセと黒糖のシフォンケーキを注文。\nオレグラッセは混ぜずに飲むことでミルクと珈琲の苦味を感じられました。\nシフォンケーキも周りにクリームがぬってあってとても美味しかったです。\nカウンターで店員さんが生クリームを泡立てていたりシフォンケーキを作っている姿を眺めながらぼんやり過ごせるのでとても気に入っています。また伺いたいです。\n\n－－－－－－－－－\n\n土曜日の11時半すぎに1人で訪問。カウンター席が空いていてすぐに通して貰えました。12時を過ぎると満席になっていました。\n\n炭火焙煎ジャマイカピーベリーと黒糖プリンを注文。\nプリンは甘すぎず黒糖の味がしっかりしていてとても美味しかったです。周りのキャラメル？がほろ苦でちょうど良かったです。\nプリンとコーヒーの組み合わせが最高でした。\n\nコーヒーも香ばしくて美味しかったです。\n\nお店の雰囲気もゆったりと落ち着けて店員さんもぱきぱきされていてとても良い空間でした。\n\n渋谷にこんな落ち着いた空間があるなんて。素敵です。\n\n近くにあったら通いたいです。",
+                "languageCode": "ja"
+            },
+            "originalText": {
+                "text": "金曜の16時過ぎに再訪。\n店内は賑わっていましたが、待たずにカウンターに案内していただけました。\n\nオレグラッセと黒糖のシフォンケーキを注文。\nオレグラッセは混ぜずに飲むことでミルクと珈琲の苦味を感じられました。\nシフォンケーキも周りにクリームがぬってあってとても美味しかったです。\nカウンターで店員さんが生クリームを泡立てていたりシフォンケーキを作っている姿を眺めながらぼんやり過ごせるのでとても気に入っています。また伺いたいです。\n\n－－－－－－－－－\n\n土曜日の11時半すぎに1人で訪問。カウンター席が空いていてすぐに通して貰えました。12時を過ぎると満席になっていました。\n\n炭火焙煎ジャマイカピーベリーと黒糖プリンを注文。\nプリンは甘すぎず黒糖の味がしっかりしていてとても美味しかったです。周りのキャラメル？がほろ苦でちょうど良かったです。\nプリンとコーヒーの組み合わせが最高でした。\n\nコーヒーも香ばしくて美味しかったです。\n\nお店の雰囲気もゆったりと落ち着けて店員さんもぱきぱきされていてとても良い空間でした。\n\n渋谷にこんな落ち着いた空間があるなんて。素敵です。\n\n近くにあったら通いたいです。",
+                "languageCode": "ja"
+            },
+            "authorAttribution": {
+                "displayName": "ぐぴぴ",
+                "uri": "https://www.google.com/maps/contrib/105746013449779927822/reviews",
+                "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW6ivXOFdLsoVbf8WQTxbvbO2ogDKwtBEWLOWvXhhmC0zVIN7w=s128-c0x00000000-cc-rp-mo-ba5"
+            },
+            "publishTime": "2024-08-17T03:39:15Z"
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChdDSUhNMG9nS0VJQ0FnSURMN0stMm53RRAB",
+            "relativePublishTimeDescription": "2 か月前",
+            "rating": 4,
+            "text": {
+                "text": "渋谷にあるカフェでメイプルシフォンケーキとカフェラテを注文しました。平日でしたが店内は賑わっており、タイミングが良く並ばずに入れました。\n店内は昔ながらのあったかい雰囲気でとてもこだわりを感じました。お皿やカップがとても可愛かったです。シフォンケーキもとてもおいしく、一口食べて幸せが感じられる瞬間でした。また利用したいです。",
+                "languageCode": "ja"
+            },
+            "originalText": {
+                "text": "渋谷にあるカフェでメイプルシフォンケーキとカフェラテを注文しました。平日でしたが店内は賑わっており、タイミングが良く並ばずに入れました。\n店内は昔ながらのあったかい雰囲気でとてもこだわりを感じました。お皿やカップがとても可愛かったです。シフォンケーキもとてもおいしく、一口食べて幸せが感じられる瞬間でした。また利用したいです。",
+                "languageCode": "ja"
+            },
+            "authorAttribution": {
+                "displayName": "ri02lly22",
+                "uri": "https://www.google.com/maps/contrib/116435722930904230672/reviews",
+                "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUMiwGDcvUrQ4iqCxUX2yX667xcxo4WByCpNgBbhwz60UdQ5Q0=s128-c0x00000000-cc-rp-mo-ba5"
+            },
+            "publishTime": "2024-06-26T04:02:10Z"
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChZDSUhNMG9nS0VJQ0FnSURqMExpb1FBEAE",
+            "relativePublishTimeDescription": "4 か月前",
+            "rating": 5,
+            "text": {
+                "text": "宮益坂上にある弊社から降りた若者の街渋谷にある大人の喫茶店。昔ながらのカフェ・ラ・ミルやウェストが好きな方なら必ずお気に召して頂ける純喫茶。渋谷の買い物のついでにおすすめです。打ち合わせにも最適。マガジンハウスさんとの打ち合わせに頻繁に使わせていただいております。軽食も極めて美味なのでファミレスで安物買いの銭失いするより遥かにベター。",
+                "languageCode": "ja"
+            },
+            "originalText": {
+                "text": "宮益坂上にある弊社から降りた若者の街渋谷にある大人の喫茶店。昔ながらのカフェ・ラ・ミルやウェストが好きな方なら必ずお気に召して頂ける純喫茶。渋谷の買い物のついでにおすすめです。打ち合わせにも最適。マガジンハウスさんとの打ち合わせに頻繁に使わせていただいております。軽食も極めて美味なのでファミレスで安物買いの銭失いするより遥かにベター。",
+                "languageCode": "ja"
+            },
+            "authorAttribution": {
+                "displayName": "Gplanning&creative corporation",
+                "uri": "https://www.google.com/maps/contrib/109978599162418297322/reviews",
+                "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWfyodn6yp4JkwZYZvTTsq241i5aVcUz1zPBRwAb0dB7iefYRvB=s128-c0x00000000-cc-rp-mo-ba5"
+            },
+            "publishTime": "2024-04-28T08:37:47Z"
+        }
+    ],
+    "photos": [
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q4WNogtB1NgeMI0M0M2nLq6jYD93Q3Qg39shyaojPd2wNDUTDT4K5Wk71w65e13lruYI6BIb2p0qS3s3VEinxLMHvfG0ZUxA-GeSmtGZMA5fN0hs8OnSaEgLkbG7Gc_uJpK_agDBf2QRRDyCm6B-QoULGVCseUJQ6A",
+            "widthPx": 4032,
+            "heightPx": 2269,
+            "authorAttributions": [
+                {
+                    "displayName": "茶亭 羽當",
+                    "uri": "https://maps.google.com/maps/contrib/117691190573480856789",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXtojIYXlIQUeaLX9JLPN-fUp0VVjYhh_65_h6tWDbm7DVKjA=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q5M_Vozl4rH7opQpRr8QfEJ_cGNV03qEn0cXH8zvf4NzN3zmCsGws7yyDfK4kNxLRjYSPy5erRYOmmn6D2PWpbki6wDcL0vGVNfEg6jIjI2ZAcUColLsNpe4sHzUor1Yn4p-xlOEnF3b9-ONN5p33aSsIjYOYir_CxG",
+            "widthPx": 3072,
+            "heightPx": 4080,
+            "authorAttributions": [
+                {
+                    "displayName": "Tong Guo",
+                    "uri": "https://maps.google.com/maps/contrib/100912783835748480296",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVLV_Fy1dD4reIW8SvW5rUz-Ed2rp2DyHr_EyE_TKlpm7oLHws=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q5VJJ4ddRXzf7DAMkF1mEiU20CbFQPv8bUgco6AlyqMh466pAGxpqwjIyyN9nOhrQ8R46laWA4dMQf_OToAxtYIeCakOEMYROOZUO2VUftJdXHenQI0d564NZJmocWNUQHRR4zQwPvWrlL-2EBTqsadVEnYLOX500U",
+            "widthPx": 3024,
+            "heightPx": 4032,
+            "authorAttributions": [
+                {
+                    "displayName": "茶亭 羽當",
+                    "uri": "https://maps.google.com/maps/contrib/117691190573480856789",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXtojIYXlIQUeaLX9JLPN-fUp0VVjYhh_65_h6tWDbm7DVKjA=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q7N81mhLFoSDV_LC4fVKuuf-dVHpcoWhxPDHr8rdJO3NKJJArFyPcBYs4Oc9tK_yACs3ODf_3ODFx0OsDfRmfXW5Kp2mwvfN2gzhWtBFZVIQu8MdXg9GfVfCu_enBj_OOof4rTYpBwYesErKzxC88CIQGGzZcoAaLh1",
+            "widthPx": 3072,
+            "heightPx": 4080,
+            "authorAttributions": [
+                {
+                    "displayName": "Tong Guo",
+                    "uri": "https://maps.google.com/maps/contrib/100912783835748480296",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVLV_Fy1dD4reIW8SvW5rUz-Ed2rp2DyHr_EyE_TKlpm7oLHws=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q67em538r28wSARDaghFmViGMCm42a8l01QcYp_Q01W1bNyYcIaxmSivK_2Twl7APZAb0kLeApnXOppkSeru03z8nd5Qre6_hsaruPM2YFmK-LdWz1MyCf770aRu3SPBRClRCm_S2Fbkw-kQbgfd6Wrkx4mJ369wk1O",
+            "widthPx": 4800,
+            "heightPx": 3600,
+            "authorAttributions": [
+                {
+                    "displayName": "Margeaux McClelland",
+                    "uri": "https://maps.google.com/maps/contrib/112768366323606256242",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWGnX6UtvJ_xx3dZ385I6qfTeZrcXeFdNiHdS9DQDlsjkq0kftu=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q56IVbB1m0c6ECVkv3likBUTvHl6PaswX2LD2jdtsd73Nwj4EhCToFJQBcxuqYOZ9HDgwtkRiQn2QhB8CJEij1wXeKHtdYDG-2aArdp0ICkW4L5mswtw_1yLKuRyXSOLMP0osj-PKBYvS9Kr8-LLmP4JlUpr5Qp1aHh",
+            "widthPx": 2437,
+            "heightPx": 3249,
+            "authorAttributions": [
+                {
+                    "displayName": "na nana",
+                    "uri": "https://maps.google.com/maps/contrib/104202592645996747300",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXyvbxMqxyFhyAhMNpzTwFG6pnLqJYO_gP2j18bs9NCJz0h3aZ1=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q58n4RSLAFnBDOnp1mB8GWd4vNo4qGazSFy5_gQtAPUGiqL51HffQNeYMu3BcYQC1ZSXEjNwXpyuoSECXFjbN-gAIpnydUzMTEBRj4nR9E-hyKqPhcI_ErhhrT5B-vSYvrfbRl-E1HfjJeXystNOerl46D7gD07-5GG",
+            "widthPx": 3024,
+            "heightPx": 4032,
+            "authorAttributions": [
+                {
+                    "displayName": "KE KE",
+                    "uri": "https://maps.google.com/maps/contrib/108027067067954680172",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUKPtu7lfAZNREO6G08VkXWfMlumuJCCtzXTONfVhRpgky-0Bi8qA=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q7nhPRZUJR7ys-SPXa6jXwPZJ3B1cPnS8_UyI0_ImYAY1ieyIvEd0NzD5IDm_LkKoj1Fcb0j8Cu9CRr6IAVgbrdtjLRzBa303st_a_OwwySz2GqBRr4Xzz-WHZWRMz4bpknfL-GoUrT1dyqgYhkZgowSmNQTcLH2m-j",
+            "widthPx": 4096,
+            "heightPx": 2790,
+            "authorAttributions": [
+                {
+                    "displayName": "lilly lung",
+                    "uri": "https://maps.google.com/maps/contrib/115574059916646434370",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUep4_kP1ai33foxK6B-Y7TE9HBzUmvDPgSb8PI65HuevTfSJv4=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q6I_hUG_NNVwUMcqLtKVG26s4wCn7kVwHjcvkFpIt0UjdDOrx-uaGP8OQz_uPHqnyM6qVvxInUz6d9VS4w5ZGW_78_OagaAUb4vLePVXUewdvQpLrc_E430a4LaCHGMpQ-kpVbh60OXVUdd9WQYYZFNd6bz8vuJ1aq9",
+            "widthPx": 3024,
+            "heightPx": 4032,
+            "authorAttributions": [
+                {
+                    "displayName": "Ichi go",
+                    "uri": "https://maps.google.com/maps/contrib/111105387761616996126",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXctXUVleobizgI8m4hQhePXsHk3u_cRHAaH8sgjA6qnBHrmn4f=s100-p-k-no-mo"
+                }
+            ]
+        },
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q7mOTug5bLPiuLngWjpU91dKGoQP9ITiHb14wXoAUB1vE_dC10js120RqnyxJBFWjCPllhaBBetADR_G5Vzg4zuMMW-8sIYwnDn_TmVT0poOhFY3EPL1OqcZIcIMPWxSXpJKfgvMaPdC23dEVNt98_7WScp48g-ils",
+            "widthPx": 4000,
+            "heightPx": 3000,
+            "authorAttributions": [
+                {
+                    "displayName": "박희성",
+                    "uri": "https://maps.google.com/maps/contrib/106323150304767861660",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWxZ3LABUXr34jVeW1Z9FHOk50Fx1cqmzsQttH6lds8NntMdU5b=s100-p-k-no-mo"
+                }
+            ]
+        }
+    ],
+    "outdoorSeating": false,
+    "liveMusic": false,
+    "menuForChildren": false,
+    "servesCocktails": false,
+    "servesDessert": true,
+    "servesCoffee": true,
+    "goodForChildren": false,
+    "allowsDogs": false,
+    "restroom": true,
+    "goodForWatchingSports": false,
+    "paymentOptions": {
+        "acceptsCashOnly": true
+    },
+    "parkingOptions": {
+        "freeParkingLot": false,
+        "paidParkingLot": false
+    },
+    "accessibilityOptions": {
+        "wheelchairAccessibleParking": false,
+        "wheelchairAccessibleEntrance": false,
+        "wheelchairAccessibleRestroom": false,
+        "wheelchairAccessibleSeating": false
+    }
+}

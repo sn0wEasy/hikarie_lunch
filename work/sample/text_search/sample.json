@@ -1,0 +1,785 @@
+{
+    "places": [
+        {
+            "name": "places/ChIJGQivCliLGGARQGD2vV8CIII",
+            "id": "ChIJGQivCliLGGARQGD2vV8CIII",
+            "types": [
+                "cafe",
+                "coffee_shop",
+                "store",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "nationalPhoneNumber": "03-3400-9088",
+            "internationalPhoneNumber": "+81 3-3400-9088",
+            "formattedAddress": "1-chōme-15-19 Shibuya, Shibuya City, Tokyo 150-0002, Japan",
+            "addressComponents": [
+                {
+                    "longText": "19",
+                    "shortText": "19",
+                    "types": [
+                        "premise"
+                    ],
+                    "languageCode": "en-US"
+                },
+                {
+                    "longText": "15",
+                    "shortText": "15",
+                    "types": [
+                        "sublocality_level_4",
+                        "sublocality",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "1-chōme",
+                    "shortText": "1-chōme",
+                    "types": [
+                        "sublocality_level_3",
+                        "sublocality",
+                        "political"
+                    ],
+                    "languageCode": "ja-Latn"
+                },
+                {
+                    "longText": "Shibuya",
+                    "shortText": "Shibuya",
+                    "types": [
+                        "sublocality_level_2",
+                        "sublocality",
+                        "political"
+                    ],
+                    "languageCode": "ja-Latn"
+                },
+                {
+                    "longText": "Shibuya City",
+                    "shortText": "Shibuya City",
+                    "types": [
+                        "locality",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Tokyo",
+                    "shortText": "Tokyo",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "Japan",
+                    "shortText": "JP",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "languageCode": "en"
+                },
+                {
+                    "longText": "150-0002",
+                    "shortText": "150-0002",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "languageCode": "en-US"
+                }
+            ],
+            "plusCode": {
+                "globalCode": "8Q7XMP63+54",
+                "compoundCode": "MP63+54 Shibuya City, Tokyo, Japan"
+            },
+            "location": {
+                "latitude": 35.660461399999996,
+                "longitude": 139.7027761
+            },
+            "viewport": {
+                "low": {
+                    "latitude": 35.659098469708496,
+                    "longitude": 139.70142641970853
+                },
+                "high": {
+                    "latitude": 35.661796430291496,
+                    "longitude": 139.7041243802915
+                }
+            },
+            "rating": 4.1,
+            "googleMapsUri": "https://maps.google.com/?cid=9376497034417561664",
+            "websiteUri": "https://www.instagram.com/hatou_coffee_shibuya/",
+            "regularOpeningHours": {
+                "openNow": true,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 0
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 23,
+                            "minute": 0
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 0
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 23,
+                            "minute": 0
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 0
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 23,
+                            "minute": 0
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 0
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 23,
+                            "minute": 0
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 0
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 23,
+                            "minute": 0
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 0
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 23,
+                            "minute": 0
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 0
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 23,
+                            "minute": 0
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:00 AM – 11:00 PM",
+                    "Tuesday: 11:00 AM – 11:00 PM",
+                    "Wednesday: 11:00 AM – 11:00 PM",
+                    "Thursday: 11:00 AM – 11:00 PM",
+                    "Friday: 11:00 AM – 11:00 PM",
+                    "Saturday: 11:00 AM – 11:00 PM",
+                    "Sunday: 11:00 AM – 11:00 PM"
+                ]
+            },
+            "utcOffsetMinutes": 540,
+            "adrFormatAddress": "<span class=\"street-address\">1-chōme-15-19 Shibuya, Shibuya City</span>, <span class=\"region\">Tokyo</span> <span class=\"postal-code\">150-0002</span>, <span class=\"country-name\">Japan</span>",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+            "userRatingCount": 1632,
+            "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+            "iconBackgroundColor": "#FF9E67",
+            "displayName": {
+                "text": "Chatei Hatou",
+                "languageCode": "en"
+            },
+            "primaryTypeDisplayName": {
+                "text": "Cafe",
+                "languageCode": "en-US"
+            },
+            "takeout": true,
+            "delivery": false,
+            "dineIn": true,
+            "servesLunch": true,
+            "servesDinner": false,
+            "servesBeer": false,
+            "servesWine": true,
+            "servesVegetarianFood": false,
+            "currentOpeningHours": {
+                "openNow": true,
+                "periods": [
+                    {
+                        "open": {
+                            "day": 0,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 22
+                            }
+                        },
+                        "close": {
+                            "day": 0,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 22
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 1,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 16
+                            }
+                        },
+                        "close": {
+                            "day": 1,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 16
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 2,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 17
+                            }
+                        },
+                        "close": {
+                            "day": 2,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 17
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 3,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 18
+                            }
+                        },
+                        "close": {
+                            "day": 3,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 18
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 4,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 19
+                            }
+                        },
+                        "close": {
+                            "day": 4,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 19
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 5,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 20
+                            }
+                        },
+                        "close": {
+                            "day": 5,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 20
+                            }
+                        }
+                    },
+                    {
+                        "open": {
+                            "day": 6,
+                            "hour": 11,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 21
+                            }
+                        },
+                        "close": {
+                            "day": 6,
+                            "hour": 23,
+                            "minute": 0,
+                            "date": {
+                                "year": 2024,
+                                "month": 9,
+                                "day": 21
+                            }
+                        }
+                    }
+                ],
+                "weekdayDescriptions": [
+                    "Monday: 11:00 AM – 11:00 PM",
+                    "Tuesday: 11:00 AM – 11:00 PM",
+                    "Wednesday: 11:00 AM – 11:00 PM",
+                    "Thursday: 11:00 AM – 11:00 PM",
+                    "Friday: 11:00 AM – 11:00 PM",
+                    "Saturday: 11:00 AM – 11:00 PM",
+                    "Sunday: 11:00 AM – 11:00 PM"
+                ]
+            },
+            "primaryType": "cafe",
+            "shortFormattedAddress": "1-chōme-15-19 Shibuya, Shibuya City",
+            "editorialSummary": {
+                "text": "Cozy cafe with shelves stacked with colorful teacups, serving coffee & eclectic cakes.",
+                "languageCode": "en"
+            },
+            "reviews": [
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChdDSUhNMG9nS0VJQ0FnSUNMaUlpS3hBRRAB",
+                    "relativePublishTimeDescription": "3 months ago",
+                    "rating": 5,
+                    "text": {
+                        "text": "Honestly love the atmosphere in this cafe. Really quaint. Food was great too though it's on the pricier side. On weekdays, the queue moves fast but on the weekends the queue can be quite long.\n\nChiffon cake was soft and fluffy and a big piece too. The most popular flavour is maple chiffon. Open face sandwich was good too. Coffee has a pretty roasted aroma. My friend really like it.\n\nDo note this place is cash only and you're not allowed to film or take photos of the counter where the staff are working at.",
+                        "languageCode": "en"
+                    },
+                    "originalText": {
+                        "text": "Honestly love the atmosphere in this cafe. Really quaint. Food was great too though it's on the pricier side. On weekdays, the queue moves fast but on the weekends the queue can be quite long.\n\nChiffon cake was soft and fluffy and a big piece too. The most popular flavour is maple chiffon. Open face sandwich was good too. Coffee has a pretty roasted aroma. My friend really like it.\n\nDo note this place is cash only and you're not allowed to film or take photos of the counter where the staff are working at.",
+                        "languageCode": "en"
+                    },
+                    "authorAttribution": {
+                        "displayName": "Je",
+                        "uri": "https://www.google.com/maps/contrib/114907047843026770821/reviews",
+                        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVcbenQQOueIsp8KvEu1WrfPxpwqr3Iw2A1bkd81u1AfMrW27gR=s128-c0x00000000-cc-rp-mo-ba2"
+                    },
+                    "publishTime": "2024-06-14T09:19:47Z"
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChdDSUhNMG9nS0VJQ0FnSUQ3eGVfYXpRRRAB",
+                    "relativePublishTimeDescription": "2 weeks ago",
+                    "rating": 5,
+                    "text": {
+                        "text": "Found this lovely little cafe while walking around. There’s a sign that says no unauthorized photos allowed. Some may find it a shame as the interior is really beautiful but I think being able to enjoy a coffee without disturbance is really great. It is very peaceful in the cafe, almost like a library. I had the original blend coffee and a matcha chiffon cake. Both were great. I guess if you asked for permission to take picture of the food, it might be allowed. Menu on the table is in Japanese (didn’t see the cake options on it). They have an English version available (with cake options) as well if required. Note that this is a cash only cafe!",
+                        "languageCode": "en"
+                    },
+                    "originalText": {
+                        "text": "Found this lovely little cafe while walking around. There’s a sign that says no unauthorized photos allowed. Some may find it a shame as the interior is really beautiful but I think being able to enjoy a coffee without disturbance is really great. It is very peaceful in the cafe, almost like a library. I had the original blend coffee and a matcha chiffon cake. Both were great. I guess if you asked for permission to take picture of the food, it might be allowed. Menu on the table is in Japanese (didn’t see the cake options on it). They have an English version available (with cake options) as well if required. Note that this is a cash only cafe!",
+                        "languageCode": "en"
+                    },
+                    "authorAttribution": {
+                        "displayName": "Alicia T",
+                        "uri": "https://www.google.com/maps/contrib/118281357370874046024/reviews",
+                        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKTOTJvYgMBntjJ8Ud55B6OE479iBLktvJOf2xroxwrJcLChQ=s128-c0x00000000-cc-rp-mo"
+                    },
+                    "publishTime": "2024-08-26T11:38:02Z"
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChZDSUhNMG9nS0VJQ0FnSUQ3MjluUUNBEAE",
+                    "relativePublishTimeDescription": "2 weeks ago",
+                    "rating": 5,
+                    "text": {
+                        "text": "This place is serious about coffee making! This is a great spot if you are interested in romantic atmosphere and delicious, expertly made coffee. I loved the unique, fine drinkware the coffee was served in. We had the pumpkin pudding, and its sweetness paired perfectly with coffee.\n\nThey have an English menu, and the staff, though busy, were patient with us as we communicated in broken Japanese. This place was busy, so try to stop in during slower hours.",
+                        "languageCode": "en"
+                    },
+                    "originalText": {
+                        "text": "This place is serious about coffee making! This is a great spot if you are interested in romantic atmosphere and delicious, expertly made coffee. I loved the unique, fine drinkware the coffee was served in. We had the pumpkin pudding, and its sweetness paired perfectly with coffee.\n\nThey have an English menu, and the staff, though busy, were patient with us as we communicated in broken Japanese. This place was busy, so try to stop in during slower hours.",
+                        "languageCode": "en"
+                    },
+                    "authorAttribution": {
+                        "displayName": "Margeaux McClelland",
+                        "uri": "https://www.google.com/maps/contrib/112768366323606256242/reviews",
+                        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWGnX6UtvJ_xx3dZ385I6qfTeZrcXeFdNiHdS9DQDlsjkq0kftu=s128-c0x00000000-cc-rp-mo-ba3"
+                    },
+                    "publishTime": "2024-08-28T22:03:40Z"
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChdDSUhNMG9nS0VJQ0FnSUM3M3Z2MDF3RRAB",
+                    "relativePublishTimeDescription": "a month ago",
+                    "rating": 5,
+                    "text": {
+                        "text": "The staff were a bit curt, but the cake and coffee were so good it didn't matter.  Top prices for a top cup of coffee. If you love coffee this place is a great find, but if you're looking for a casual breakfast I'd move on",
+                        "languageCode": "en"
+                    },
+                    "originalText": {
+                        "text": "The staff were a bit curt, but the cake and coffee were so good it didn't matter.  Top prices for a top cup of coffee. If you love coffee this place is a great find, but if you're looking for a casual breakfast I'd move on",
+                        "languageCode": "en"
+                    },
+                    "authorAttribution": {
+                        "displayName": "Cole Adams",
+                        "uri": "https://www.google.com/maps/contrib/102073071888077698909/reviews",
+                        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUHF8N7eYw36tzMv9heRc5m5p3B5bEWt_-6t8VK5guzRupIdyxF=s128-c0x00000000-cc-rp-mo-ba2"
+                    },
+                    "publishTime": "2024-08-16T03:24:08Z"
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChZDSUhNMG9nS0VJQ0FnSUNkc1lyWU9BEAE",
+                    "relativePublishTimeDescription": "7 months ago",
+                    "rating": 5,
+                    "text": {
+                        "text": "@hatou_coffee_shibuya is my favorite cafe in the city. I love the vibes and just sitting at the bar watching the baristas brewing coffee in the very traditional Japanese, Showa style.\n\nIn addition to well crafted coffee, their chiffon cakes are also a must order item. Super yummy, airy, and delivers the subtle sweet flavor. All the flavors are amazing.",
+                        "languageCode": "en"
+                    },
+                    "originalText": {
+                        "text": "@hatou_coffee_shibuya is my favorite cafe in the city. I love the vibes and just sitting at the bar watching the baristas brewing coffee in the very traditional Japanese, Showa style.\n\nIn addition to well crafted coffee, their chiffon cakes are also a must order item. Super yummy, airy, and delivers the subtle sweet flavor. All the flavors are amazing.",
+                        "languageCode": "en"
+                    },
+                    "authorAttribution": {
+                        "displayName": "Vicki",
+                        "uri": "https://www.google.com/maps/contrib/102524958063200299256/reviews",
+                        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW3LP-0KHOgeYOGmrXE5urSaq_YeJTFIbujDNZALRlolpKttdWu=s128-c0x00000000-cc-rp-mo-ba6"
+                    },
+                    "publishTime": "2024-02-16T01:41:34Z"
+                }
+            ],
+            "photos": [
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q4-AGOyDg0mY4EohxsofN7LfdUEak0YQIqKV9N-69vZT94ixw7b9tWk_MMFGP1cN2fZHVHgYR4lQXK5bSPTuJmBbP71F8-PwTjwcdnB-siWNyAbkVoDo6QKw6BmSOmCfN7HLRwslSdK5eqG_O2xepWf8YVR1jPyGGI",
+                    "widthPx": 4032,
+                    "heightPx": 2269,
+                    "authorAttributions": [
+                        {
+                            "displayName": "茶亭 羽當",
+                            "uri": "https://maps.google.com/maps/contrib/117691190573480856789",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXtojIYXlIQUeaLX9JLPN-fUp0VVjYhh_65_h6tWDbm7DVKjA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q6es-DAjlFvvJ51579gviA3WKjDAZ7CF7UoA70I0wEqzcKBYNEBycJWu5nMhjFCIjAYXz54cvEGYPcHGGx3P72ffNqfXXfBEYHFy1UOBwLGg1mLBiQFgsBlKtEHrhpiZp6THrAgUDxsFRyMlr0Vz9mnFTfPa0G91pJM",
+                    "widthPx": 3072,
+                    "heightPx": 4080,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Tong Guo",
+                            "uri": "https://maps.google.com/maps/contrib/100912783835748480296",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVLV_Fy1dD4reIW8SvW5rUz-Ed2rp2DyHr_EyE_TKlpm7oLHws=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q6DLFJQJxxitYG3cDLWXBYaMA42swpWS_NXhLJncRqeK0GYEn6wTdMn1Q451-zICiL3qa_pphAZbal7Ec-6oTW9YOkHpZXjmk6zZDy0cNW4kfUZ-ZNbNDexqwqSaIw9KF--Ewh5v0wneErCM8KygKeyv1zva54-ceU",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "茶亭 羽當",
+                            "uri": "https://maps.google.com/maps/contrib/117691190573480856789",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXtojIYXlIQUeaLX9JLPN-fUp0VVjYhh_65_h6tWDbm7DVKjA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q6gTYZCI-AwdpmlQSkPLzAuRknWNfTU0U9prjzbWPjbVCHERoa9pjIS_aBDnvfGNjzPUzFJYRtiTqyyhV0bgTQW6eYqaow6nhPa4TbORHymwN7WB0jjAOYGJANXTK_NC8x_CdeClgHS0mzEQ55nPeRlwP1WYd-eDa67",
+                    "widthPx": 3072,
+                    "heightPx": 4080,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Tong Guo",
+                            "uri": "https://maps.google.com/maps/contrib/100912783835748480296",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVLV_Fy1dD4reIW8SvW5rUz-Ed2rp2DyHr_EyE_TKlpm7oLHws=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q6-yTu4BG4sCamUw7LHebzEazah-vqfbtXZi-LjLq3-nggb4o7pBPtu0WDmLEM4If4vUi9nuFKgaZF6YU13EYUj8fqKd9RmlSXGu2UfoHCn-cHPcTh68Ig9VR8zmEAtoBzbutfS2gMNV0OJQ-YEXyikXWxZNbjGprg5",
+                    "widthPx": 4800,
+                    "heightPx": 3600,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Margeaux McClelland",
+                            "uri": "https://maps.google.com/maps/contrib/112768366323606256242",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWGnX6UtvJ_xx3dZ385I6qfTeZrcXeFdNiHdS9DQDlsjkq0kftu=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q4ExSgnDxMNH2gbWmjal8tQWzRVZDEFi51L9ABZd1ZjV4awE_5yK_P8SW2XpiWyC7SBq0EzGyA9LlisRUFjBxwGpcmF3lkWOc0H80i0dYXTaElflndXII_VrGpUJZHYzlmyBvpNlR3XMnUo9DDLsMjOT0YnsuqGGkyM",
+                    "widthPx": 2437,
+                    "heightPx": 3249,
+                    "authorAttributions": [
+                        {
+                            "displayName": "na nana",
+                            "uri": "https://maps.google.com/maps/contrib/104202592645996747300",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXyvbxMqxyFhyAhMNpzTwFG6pnLqJYO_gP2j18bs9NCJz0h3aZ1=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q78OGdqJVtu2bV_SNqoqUndMmTojVvCCZudU_2HVb77OsvwpuHZszcjF_azCQzYqtzsRJ9J-PQ5tEMwBgvPHo_pwH1xphrLMknX15jXbJzY9LePlBljsUvRk6_FRf-7dipI-qdWMpMGNYuze9gFstY3jj722_AAqNoS",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "KE KE",
+                            "uri": "https://maps.google.com/maps/contrib/108027067067954680172",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUKPtu7lfAZNREO6G08VkXWfMlumuJCCtzXTONfVhRpgky-0Bi8qA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q5MatygIJfn2mcoiLPyUqMzsmJlggeBv6SwSeUJUmyOYW7BswlICeJo-gGFstF451m0R6vlUUdEQP5x_cFb3fOOM8k2IobFFEX1UKsL8MC5-QOn17tSQZoNKSlozGwNBXtZlRKca2_pG7BbY6Fy_LC_1dsjj61lYlwV",
+                    "widthPx": 4096,
+                    "heightPx": 2790,
+                    "authorAttributions": [
+                        {
+                            "displayName": "lilly lung",
+                            "uri": "https://maps.google.com/maps/contrib/115574059916646434370",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUep4_kP1ai33foxK6B-Y7TE9HBzUmvDPgSb8PI65HuevTfSJv4=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q7i-to0ggahIPLKaGm2tJDyT83NQVzqZ01XPWfDYkr-XfHUYDxXhIWpsTNfyKs5Gi7G-DOlambLR8eRGIbo_gEH87RsA9c6YvXpBfwWn5j-Yn4ukgzX3u5p60yLigPrsUuviNVPpG0E9AeYjY1LPZBSKI6sY__ZoEsD",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ichi go",
+                            "uri": "https://maps.google.com/maps/contrib/111105387761616996126",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXctXUVleobizgI8m4hQhePXsHk3u_cRHAaH8sgjA6qnBHrmn4f=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q52dOpbXqa2sSCygnychMHJtWxvyUMqlUNxeyHjWMu-Fz8bDlusrZ9BwPo4VdmIyEUBmmRoP6FxeLwcXZzpTpgt4GgrVIbQ9kA8a3HnUOrXx-dE4NvadVKLWL10viCjJPHSs7nXVrNuqkA2taGLaG1B0hxJVnYSibg",
+                    "widthPx": 4000,
+                    "heightPx": 3000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "박희성",
+                            "uri": "https://maps.google.com/maps/contrib/106323150304767861660",
+                            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWxZ3LABUXr34jVeW1Z9FHOk50Fx1cqmzsQttH6lds8NntMdU5b=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ],
+            "outdoorSeating": false,
+            "liveMusic": false,
+            "menuForChildren": false,
+            "servesCocktails": false,
+            "servesDessert": true,
+            "servesCoffee": true,
+            "goodForChildren": false,
+            "allowsDogs": false,
+            "restroom": true,
+            "goodForWatchingSports": false,
+            "paymentOptions": {
+                "acceptsCashOnly": true
+            },
+            "parkingOptions": {
+                "freeParkingLot": false,
+                "paidParkingLot": false
+            },
+            "accessibilityOptions": {
+                "wheelchairAccessibleParking": false,
+                "wheelchairAccessibleEntrance": false,
+                "wheelchairAccessibleRestroom": false,
+                "wheelchairAccessibleSeating": false
+            }
+        }
+    ],
+    "contextualContents": [
+        {
+            "reviews": [
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChdDSUhNMG9nS0VJQ0FnSUNyNG95M3dBRRAB",
+                    "relativePublishTimeDescription": "2 months ago",
+                    "rating": 3,
+                    "text": {
+                        "text": "Satei Uto is a historic coffee shop located in Shibuya, Tokyo. Founded in 1980, it has supported Shibuya's cafe culture for many years. The name Hato is said to have come from the founder's desire to create a place that symbolizes a feather and provides a space of freedom and enrichment.\n\nChatei Hato is characterized by its retro and calm atmosphere, and the interior is decorated with antique furniture and furnishings, giving it a nostalgic Showa era feel. This space offers visitors a quiet and relaxing time, and is loved by many regulars and tourists.\n\nThe menu is full of coffee, tea, sweets, etc., and the hand drip coffee is especially popular. Each cup of coffee is carefully brewed, allowing you to enjoy its aroma and taste. They also offer homemade cakes and light snacks, which go perfectly with coffee.\n\nSince its founding, Chatei Hato has been loved by many literary figures and artists, and is also known as a place where they gather. This coffee shop has played an important role not only as a place to eat and drink, but also as a place for cultural exchange.\n\nToday, Chatei Hato continues to maintain the atmosphere of its founding, offering visitors a quiet and quality time, and is loved by many as a place of relaxation away from the hustle and bustle of Shibuya.",
+                        "languageCode": "en-US"
+                    },
+                    "originalText": {
+                        "text": "茶亭 羽當（さてい うとう）は、東京・渋谷にある歴史ある喫茶店です。1980年に創業し、長年にわたり渋谷のカフェ文化を支えてきました。羽當の名前の由来は、創業者が「羽」を象徴として、自由な空間と豊かな時間を提供する場にしたいという思いから名付けられたとされています。\n\n茶亭 羽當は、レトロで落ち着いた雰囲気の店内が特徴で、店内のインテリアはアンティークな家具や調度品が配置され、どこか懐かしい昭和の雰囲気を感じさせます。この空間は、訪れる人々に静かでゆったりとした時間を提供し、多くの常連客や観光客に愛されています。\n\nメニューはコーヒーや紅茶、スイーツなどが充実しており、特にハンドドリップコーヒーが人気です。コーヒーは一杯一杯丁寧に淹れられ、その香りと味わいが楽しめます。また、手作りのケーキや軽食も提供されており、コーヒーとの相性が抜群です。\n\n創業以来、茶亭 羽當は多くの文学者やアーティストにも愛され、彼らが集う場所としても知られています。この喫茶店は、単なる飲食の場だけでなく、文化的な交流の場としても重要な役割を果たしてきました。\n\n現在も創業当時の雰囲気を守り続け、訪れる人々に静かで上質な時間を提供している茶亭 羽當は、渋谷の喧騒から離れた憩いの場として、多くの人々に親しまれています。",
+                        "languageCode": "ja"
+                    },
+                    "authorAttribution": {
+                        "displayName": "Z Jay",
+                        "uri": "https://www.google.com/maps/contrib/108147431575727014301/reviews",
+                        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU3XszgKt8ctS3DaQo75vGtttDLy2IihA3az0L--qkMA2Fp-5AMkw=s128-c-c0x00000000-cc-rp-mo-ba6-br100"
+                    },
+                    "publishTime": "2024-07-05T10:33:42Z"
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChZDSUhNMG9nS0VJQ0FnSUQ1X3VQM2F3EAE",
+                    "relativePublishTimeDescription": "10 months ago",
+                    "rating": 4,
+                    "text": {
+                        "text": "The tea pavilion in the alley opens late. There is a separate smoking room in the store, but there is still a bit of smoke smell around it⋯\nThere was only cheesecake left that day, so I ordered both! The tastes are all delicious~\nMilk tea is delicious\nThe cups and plates are beautiful",
+                        "languageCode": "en-US"
+                    },
+                    "originalText": {
+                        "text": "巷子內的茶亭，營業時間到比較晚👍店內是有獨立的吸菸室，但周圍還是有一點煙味⋯\n當天只剩起司蛋糕，所以兩種都點了！口感不同都很好吃～\n奶茶很好喝\n杯盤都很美",
+                        "languageCode": "zh"
+                    },
+                    "authorAttribution": {
+                        "displayName": "モモカ",
+                        "uri": "https://www.google.com/maps/contrib/109283262850530628211/reviews",
+                        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU0C07UWwQ0GN36uhxd7J3QK5RViicPG_RnYQ0AhbXhXXU6PU8=s128-c-c0x00000000-cc-rp-mo-ba6-br100"
+                    },
+                    "publishTime": "2023-10-25T05:17:30Z"
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/reviews/ChZDSUhNMG9nS0VJQ0FnSUNOaGRlcUh3EAE",
+                    "relativePublishTimeDescription": "8 months ago",
+                    "rating": 5,
+                    "text": {
+                        "text": "[Shibuya] Is photography prohibited? “Chatei Hatou” is a long-established cafe with delicious coffee.\n\nMiyamasuzaka visited Chatei Hatou, a long-established cafe located behind Lacoste on Meiji Dori, a 3-minute walk from Shibuya Station. What surprised me was that most of the people there were foreigners. Is it in some guidebook?\n\nI sat at the counter, but there was a sign prohibiting photography. There are quite a few photos on Tabelog, but has the system changed recently? ``Blend'' (900 yen) is my favorite type with a strong sour taste. I'm also happy that there's a lot in the cup.\n\nAlso, the best part of being at the counter is being able to look at the cups lined up on the wall. Sweets such as chiffon cake seemed to be popular.",
+                        "languageCode": "en-US"
+                    },
+                    "originalText": {
+                        "text": "【渋谷】写真撮影禁止？珈琲が美味しい老舗喫茶「茶亭 羽當（チャテイハトウ）」\n\n渋谷駅から徒歩3分、宮益坂は明治通りのラコステうらにある老舗喫茶「茶亭 羽當（チャテイハトウ）」にお邪魔してきました。驚いたのは外国人ばかりだったこと。何かのガイドブックに載っているのでしょうか。\n\n私はカウンターに座りましたが、写真撮影禁止の文字がありました。食べログにも結構写真載っていますが最近システムが変わったのでしょうか？「ブレンド（900円）」は酸味強めで好きなタイプ。カップにたっぷりなのも嬉しい。\n\nまた、壁に並んだカップを眺められるのもカウンターの醍醐味ですね。シフォンケーキなどのスイーツが人気のようでした。",
+                        "languageCode": "ja"
+                    },
+                    "authorAttribution": {
+                        "displayName": "はちもぐ",
+                        "uri": "https://www.google.com/maps/contrib/117569647710989528537/reviews",
+                        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUnK384bI9sXL6t49mtC2QFlANmdJU1RJZZr5tkIR66tFaMINq3KA=s128-c-c0x00000000-cc-rp-mo-ba8-br100"
+                    },
+                    "publishTime": "2024-01-16T05:35:38Z"
+                }
+            ],
+            "photos": [
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q5f-vdBuZ7J3qx3WAa4titu8jKtY2iR9s74g9q0qyI5osxZHoBlr-gEnK7_pMIbNAZ5Fo9_yTgDoeEieDyzVu2O3xevhJk_2-y4-lXIeLFnjftmZOvY2heol0PgpsTGZ1IqcudFe2b6sBXTcIkaqcbqhO8-GFi4qNQ",
+                    "widthPx": 4032,
+                    "heightPx": 2269,
+                    "authorAttributions": [
+                        {
+                            "displayName": "A Google User",
+                            "uri": "//maps.google.com/maps/contrib/117691190573480856789",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXtojIYXlIQUeaLX9JLPN-fUp0VVjYhh_65_h6tWDbm7DVKjA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q4TtmYxZzKQcd1qAE1bALpRcJ6mlhR1iwujVscWly9AAkqMJYcPOTVRcMA0LRpQRUtQGRmTCcbog6bnY5LVsVwSPnmDrIuZxeCK8hQfyNPUZ62tVQJND2XJoPmXKFewup-1ZOP-31HO_mT4CokRRuehFw9MuMQ6a0Yu",
+                    "widthPx": 3072,
+                    "heightPx": 4080,
+                    "authorAttributions": [
+                        {
+                            "displayName": "A Google User",
+                            "uri": "//maps.google.com/maps/contrib/100912783835748480296",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVLV_Fy1dD4reIW8SvW5rUz-Ed2rp2DyHr_EyE_TKlpm7oLHws=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q5pRpK7c4QfWF5ZdSFEiixKZMUcLAN3pFZN4yygMpb1VYGpWhXsNj_JmyxWLsmgE2Wz-KlVEV84YtKWyE_VFMD5kC2LomeDhT6L1EnwTV9ELeRcTvTLuJGMkkB4q-0m4BNYYkdJCAWCgrZedHBx2jlm7z5BveX_mJw",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "A Google User",
+                            "uri": "//maps.google.com/maps/contrib/117691190573480856789",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXtojIYXlIQUeaLX9JLPN-fUp0VVjYhh_65_h6tWDbm7DVKjA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q5gX1ky2G0wEeT66p8YOGbZmWPM_Kq3R0x-0c8V4MAwJknbSaoZvdWApucAWsqdQFJTKr89H4QPd2YWOkLoYdw-HMyjqzYtYQkTq6O1b2hs47s7aRvTv5dKLdkIwDceCHG5RX8P2Knb9f-zxSifEKW5fto6AaHO1_5Y",
+                    "widthPx": 3072,
+                    "heightPx": 4080,
+                    "authorAttributions": [
+                        {
+                            "displayName": "A Google User",
+                            "uri": "//maps.google.com/maps/contrib/100912783835748480296",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVLV_Fy1dD4reIW8SvW5rUz-Ed2rp2DyHr_EyE_TKlpm7oLHws=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJGQivCliLGGARQGD2vV8CIII/photos/AXCi2Q7gxp0H0LjfM5tlvUInEIBKNggXuwURQzkGapJa9mXzBdfXxDB0SaUYkeMSWg4Q-iLCR3vXNXlBXh4Gbv2c3u5X_gurF7CJGwRSfeWoMyJQVfGSl6oFLxa4r32K510qrO0YUGjFpE9oBJhz99C39ZElJQwMLGL-VUIN",
+                    "widthPx": 4800,
+                    "heightPx": 3600,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Margeaux McClelland",
+                            "uri": "//maps.google.com/maps/contrib/112768366323606256242",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWGnX6UtvJ_xx3dZ385I6qfTeZrcXeFdNiHdS9DQDlsjkq0kftu=s100-p-k-no-mo"
+                        }
+                    ]
+                }
+            ],
+            "justifications": [
+                {
+                    "businessAvailabilityAttributesJustification": {
+                        "takeout": true,
+                        "dineIn": true
+                    }
+                }
+            ]
+        }
+    ]
+}
