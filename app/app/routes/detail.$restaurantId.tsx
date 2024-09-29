@@ -8,12 +8,17 @@ import invariant from "tiny-invariant";
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
     invariant(params.restaurantId, "Missing restaurantId param");
-    const response = await fetch(`http://localhost:3001/api/restaurants/detail/${params.restaurantId}`);
-    if (!response.ok) {
-        throw new Response("Not Found", { status: 404 });
+    try {
+        const response = await fetch(`${process.env.HOST_NAME}/api/restaurants/detail/${params.restaurantId}`);
+        if (!response.ok) {
+            throw new Response("Not Found", { status: 404 });
+        }
+        const detail: RestaurantForDetail = await response.json();
+        return json({ detail });
+    } catch (error) {
+        console.error("Error fetching restaurant detail");
+        throw new Response("Error fetching restaurant detail", { status: 400 });
     }
-    const detail: RestaurantForDetail = await response.json();
-    return json({ detail });
 }
 
 

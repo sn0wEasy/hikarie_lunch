@@ -23,12 +23,17 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader = async () => {
-  const response = await fetch("http://localhost:3001/api/restaurants");
-  if (!response.ok) {
-    throw new Response("Not Found", { status: 404 });
+  try {
+    const response = await fetch(process.env.HOST_NAME + "/api/restaurants");
+    if (!response.ok) {
+      throw new Response("Not Found", { status: 404 });
+    }
+    const restaurants: RestaurantForList[] = await response.json();
+    return json({ restaurants });
+  } catch (error) {
+    console.error("Error fetching restaurants");
+    return json({ restaurants: [] });
   }
-  const restaurants: RestaurantForList[] = await response.json();
-  return json({ restaurants });
 }
 
 export default function App() {
