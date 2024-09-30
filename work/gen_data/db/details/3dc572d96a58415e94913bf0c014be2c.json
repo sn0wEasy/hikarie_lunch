@@ -1,0 +1,239 @@
+{
+    "id": "3dc572d96a58415e94913bf0c014be2c",
+    "placeId": "ChIJ__-v91WLGGARtft2u0qaz0c",
+    "displayName": "カフェレガート／Cafe Legato",
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "rating": 4.7,
+    "userRatingCount": 2551,
+    "reservable": true,
+    "purposeLunch": true,
+    "purposeDinner": true,
+    "purposeCafe": true,
+    "photoUrls": [
+        "https://lh3.googleusercontent.com/places/ANXAkqGDFOAwEiTJm3aTNHPLDAja_q18PakHEiKc1AjUjUv0ybRmL0SvePCbCwsoK7QlYJ6-WEF88xF5gG3QLraO8zyjN-bgFsDtDEo=s4800-w1000-h599",
+        "https://lh3.googleusercontent.com/places/ANXAkqHcOxCkNm59wQjovLrcrSRkUW6VDvIafpbf0nsik9oEznwnNlqpZCV9nVXQ0P8o6XufDa7PKVTQw8vmlyDwp9yjNvCiZFkMO3w=s4800-w1600-h1201",
+        "https://lh3.googleusercontent.com/places/ANXAkqEGwoH0aBfg2Z0_weJbtu8DoQqHs_v_nN7DWwTAKfAI7pWWKVYzqH881r9Y0q2UrXR5O9qYSwMmrld4rSKhnP-Ztrd5swAutKg=s4800-w1600-h1600",
+        "https://lh3.googleusercontent.com/places/ANXAkqEQOzfmLPuFmZuPOeIj4jcL636H4fED6-Zu1mHZtgdrZPMjQFLQCaWjzNaU8A7AkFRxQT05KjHBQJzMYsdywqXd6KPDIS_fhOQ=s4800-w1600-h1600",
+        "https://lh3.googleusercontent.com/places/ANXAkqFdeuhtat-uMt9QZFPS-xgLjv90z2Av-QUTMVwS3hvUF8EbLoDj6FXeCYpTkJPtVFtbueb6wqWFwUD7noFR8NI43ErvdujwwhE=s4800-w1600-h1600",
+        "https://lh3.googleusercontent.com/places/ANXAkqFKqUREO8s_PN59XBkgFtlCPzeLYot2yoalWXfiHy2M7tTCtvqVy6ZrsUGan1IAvXiFLCzW15EsJKv0nrZxYxI8_rg3PhGzz1c=s4800-w1600-h1600",
+        "https://lh3.googleusercontent.com/places/ANXAkqH82bwS734-8Vv7QKhQfyF9moGJJlhio_xrrsa3XtQ62DwSbpSbv0_86ZRYII5eSL9iPaRBx5rsWq4RTkDvgtelv-VQqhmV4dE=s4800-w1600-h1600",
+        "https://lh3.googleusercontent.com/places/ANXAkqEu3l-fLFB2E_al1crhC24_HI_9en3_73-3SVy0IvG1AS0kdyq-ajUeeh8oMnc8u6QJ69s7JR04KWzQQnJUR-69PCntSaXUlQ=s4800-w1600-h1600",
+        "https://lh3.googleusercontent.com/places/ANXAkqHzVu6ZKvf9g-YN0BIZUaPnwEn_txdCr9ZF_OPbVUTPUTg8iIawwr6ZrEmJCzyQFqYgu-qn3ZSKeUH-V6NG_L4dUQ_Vr9AGFlE=s4800-w1600-h1600",
+        "https://lh3.googleusercontent.com/places/ANXAkqF0Izhu1msfzFp_F5ORMe9sFVG_A0K9q6cO1GX_ReEsmXxMr64aWa9K-4EFAg3PfrvYVlMZQojzaS9AZTduASuKTpMtfPw2Go0=s4800-w1600-h1600"
+    ],
+    "description": "ビルの 15 階にあるシックなレストラン。夜景を眺めながらピザやパスタ、オリジナル カクテルを楽しめる。個室あり。",
+    "websiteUrl": "https://cafelegato.com/",
+    "googleMapUrl": "https://maps.google.com/?cid=5174524142635383733",
+    "phoneNumber": "050-5443-0493",
+    "reviews": [
+        {
+            "reviewId": "places/ChIJ__-v91WLGGARtft2u0qaz0c/reviews/ChdDSUhNMG9nS0VJQ0FnSURILXFuajBBRRAB",
+            "authorName": "M A",
+            "publishTime": "2024-09-15T10:12:07Z",
+            "rating": 5,
+            "comment": "8月の誕生日の際連れて行ってもらいました。\n8000円のディナーコースにしたのですが、全てのお料理が美味しく、特にニョッキとドライエイジングビーフがとても美味しかったです。\nまた、雰囲気もよくサンセットの時にカーテンを開けて夕陽をみる演出があったのが良かったです。\n接客もとても気持ちの良いもので、また伺いたいと思えるお店でした。ありがとうございました。"
+        },
+        {
+            "reviewId": "places/ChIJ__-v91WLGGARtft2u0qaz0c/reviews/ChZDSUhNMG9nS0VJQ0FnSURILThMWUZnEAE",
+            "authorName": "めい",
+            "publishTime": "2024-09-20T10:02:23Z",
+            "rating": 5,
+            "comment": "今日は友人の誕生日だったので、お祝いのために来店しました。夜景をおすすめして頂いたり、料理の質問にも丁寧に答えて頂けました。料理は本当に美味しく、とても丁度いい量で食べやすかったです。特にrooさんに私たちのテーブルを多く担当していただいたのですが、聞きやすい喋り方だったり、笑顔や対応がとても素敵でした。食事を終えた後にバースデープレートを注文したのですが、ロウソクをつけなおしてくれたり、とにかく丁寧に対応して頂き、心温まりました。\n友人のお祝いをしていると、マネージャーさんがマジックを披露してくれました。\n1日1組限定のものらしく、本当にいい思い出になりました。\nまたいつか必ずきたいと思います。\n本当にありがとうございました。"
+        },
+        {
+            "reviewId": "places/ChIJ__-v91WLGGARtft2u0qaz0c/reviews/ChdDSUhNMG9nS0VJQ0FnSUR6bFlfdWlRRRAB",
+            "authorName": "まーこ",
+            "publishTime": "2024-06-11T17:04:01Z",
+            "rating": 4,
+            "comment": "渋谷Cafe Legatoに行きました‼️\nイタリアンのランチを探してこちらへ。\n\n乾杯スパークリングワイン付きランチコース\n2800円\nコースでこの値段⁉️\nワクワク😍\n\nサラダ\n季節の彩サラダ\n\nパスタ\n黒トリュフのクリームニョッキ\n\nメイン\nグリルチキン　フレッシュトマトのケッカソース\n\nデザート\nシェフ特製デザート\n\n私はスパークリングワインで娘はノンアルコールのスパークリング。\n\n黒トリュフのクリームニョッキはソースがすごく美味‼️\nパンにつけて最高‼️\nでもニョッキが口の中で消える？？？\nニョッキはモチモチしたのが好きなんだけど、噛まなくても粉になる感じ。\nソースがすごく美味しいのにちょっと残念。\n\nメインで娘はチキンを私はメカジキをプラス700円で選択。\nメカジキのグリルタプナードソースはソースが美味しかったです‼️\n\nデザートのガトーショコラはブリュレアイスがもう、たまらない、、、\nあー美味しー\n\nソフトドリンクはリフィルOKです。\nコーヒーをおかわりすると、ステンレスポットを持ってきてサーブしてくれました。\nあ、あー\n一杯ずつ入れるタイプではないのね💦\nせめて洒落たコーヒーポットが良かったな。\n\nスタッフに通されたのはソファ席でした。\n周りはサラリーマンが多くて名刺交換してる。\nランチはさらにお手軽価格だからかな。\nテーブル席は若い子が多いし、外国人も。窓席はカップルを通している感じ。\n15階だから眺めはいい。渋谷の街が見れます。\nマークシティは目の前。\nオシャレな空間ですね。\n\n夜は夜景も綺麗だろうなあ\nデートにいいでしょう。"
+        },
+        {
+            "reviewId": "places/ChIJ__-v91WLGGARtft2u0qaz0c/reviews/ChdDSUhNMG9nS0VJQ0FnSUR6NzVUbXpBRRAB",
+            "authorName": "ぽちみ",
+            "publishTime": "2024-06-13T14:30:56Z",
+            "rating": 5,
+            "comment": "15階にあり、景色も綺麗ですし\nとにかく内装がめちゃくちゃ綺麗！オシャレ！！\n高級感めっちゃ漂ってるのですが、コスパは\nめちゃくちゃいいんですよね！素晴らしい…\n何度もお世話になってます‼️\nデートや記念日に連れてこられたら間違いなしだし\nお財布にも優しい素晴らしい！\nご飯もどれを頼んでも普通に美味しいので、\n全男子の味方なお店だと思いますw\nあと店内めちゃくちゃ広い‼️"
+        },
+        {
+            "reviewId": "places/ChIJ__-v91WLGGARtft2u0qaz0c/reviews/ChZDSUhNMG9nS0VJQ0FnSUNqeGUzQ2F3EAE",
+            "authorName": "ちょまっちゃ",
+            "publishTime": "2024-04-24T00:44:50Z",
+            "rating": 5,
+            "comment": "彼氏の誕生日で利用しました！\n15階ですごく雰囲気が良くオシャレなお店でした。食べ物をいくつか頼んでシェアして食べたが、どれも提供時間は早いし美味しかったです。誕生日のホールケーキも可愛くて彼氏がとても喜んでくれました。\n値段は可愛くなかったけど...また特別な日などに利用したいです"
+        }
+    ],
+    "openingHours": [
+        {
+            "open": {
+                "day": 0,
+                "hour": 11,
+                "minute": 30
+            },
+            "close": {
+                "day": 0,
+                "hour": 15,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 0,
+                "hour": 17,
+                "minute": 30
+            },
+            "close": {
+                "day": 1,
+                "hour": 0,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 1,
+                "hour": 11,
+                "minute": 30
+            },
+            "close": {
+                "day": 1,
+                "hour": 15,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 1,
+                "hour": 17,
+                "minute": 30
+            },
+            "close": {
+                "day": 2,
+                "hour": 0,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 2,
+                "hour": 11,
+                "minute": 30
+            },
+            "close": {
+                "day": 2,
+                "hour": 15,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 2,
+                "hour": 17,
+                "minute": 30
+            },
+            "close": {
+                "day": 3,
+                "hour": 0,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 3,
+                "hour": 11,
+                "minute": 30
+            },
+            "close": {
+                "day": 3,
+                "hour": 15,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 3,
+                "hour": 17,
+                "minute": 30
+            },
+            "close": {
+                "day": 4,
+                "hour": 0,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 4,
+                "hour": 11,
+                "minute": 30
+            },
+            "close": {
+                "day": 4,
+                "hour": 15,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 4,
+                "hour": 17,
+                "minute": 30
+            },
+            "close": {
+                "day": 5,
+                "hour": 0,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 5,
+                "hour": 11,
+                "minute": 30
+            },
+            "close": {
+                "day": 5,
+                "hour": 15,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 5,
+                "hour": 17,
+                "minute": 30
+            },
+            "close": {
+                "day": 6,
+                "hour": 1,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 6,
+                "hour": 11,
+                "minute": 30
+            },
+            "close": {
+                "day": 6,
+                "hour": 15,
+                "minute": 0
+            }
+        },
+        {
+            "open": {
+                "day": 6,
+                "hour": 17,
+                "minute": 30
+            },
+            "close": {
+                "day": 0,
+                "hour": 1,
+                "minute": 0
+            }
+        }
+    ],
+    "location": {
+        "latitude": 35.6574935,
+        "longitude": 139.6955514
+    }
+}
