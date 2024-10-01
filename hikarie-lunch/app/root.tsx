@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
-import { json, type MetaFunction } from "@remix-run/cloudflare";
+import { json, LoaderFunctionArgs, type MetaFunction } from "@remix-run/cloudflare";
 
 
 import "./tailwind.css";
@@ -22,9 +22,10 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export const loader = async () => {
+export const loader = async ({ context }: LoaderFunctionArgs) => {
   try {
-    const response = await fetch(process.env.HOST_NAME + "/api/restaurants");
+    const env = context.cloudflare.env as Env;
+    const response = await fetch(`${env.HOST_NAME}/api/restaurants`);
     if (!response.ok) {
       throw new Response("Not Found", { status: 404 });
     }

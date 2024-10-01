@@ -6,10 +6,11 @@ import { json, LoaderFunctionArgs } from "@remix-run/cloudflare";
 import invariant from "tiny-invariant";
 // import { ClientOnly } from "remix-utils/client-only";
 
-export const loader = async ({ params }: LoaderFunctionArgs) => {
+export const loader = async ({ params, context }: LoaderFunctionArgs) => {
     invariant(params.restaurantId, "Missing restaurantId param");
+    const env = context.cloudflare.env as Env;
     try {
-        const response = await fetch(`${process.env.HOST_NAME}/api/restaurants/detail/${params.restaurantId}`);
+        const response = await fetch(`${env.HOST_NAME}/api/restaurants/detail/${params.restaurantId}`);
         if (!response.ok) {
             throw new Response("Not Found", { status: 404 });
         }
