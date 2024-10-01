@@ -112,8 +112,8 @@ def storeLocalRestaurantData(restaurant_data: dict[str, any]) -> None:
 
 
 # JSONファイルにAPIレスポンス用レストランデータを保存する
-def storeLocalChildRestaurantData(child_restaurant_data: dict[str, any]) -> None:
+def storeLocalChildRestaurantData(children_restaurant_data: dict[str, any]) -> None:
 
     # ローカルのJSONファイルにデータを書き込む
-    with open("./db/child_restaurant_data.json", "w", encoding="utf8") as file:
-        json.dump(child_restaurant_data, file, ensure_ascii=False, indent=4)
+    with open("./db/children_restaurant_data.json", "w", encoding="utf8") as file:
+        json.dump(children_restaurant_data, file, ensure_ascii=False, indent=4)

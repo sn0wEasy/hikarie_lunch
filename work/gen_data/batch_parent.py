@@ -1,4 +1,4 @@
-import useCase as uc
+import usecase as uc
 import infracstucture
 import json
 import uuid
