@@ -2,7 +2,7 @@ import { useLoaderData } from "@remix-run/react";
 import { Bubble, Globe, MapPin, Phone, StarRatingComponent } from "~/components/ui/components";
 import { OpeningHour, PriceLevel, RestaurantForDetail } from "~/entity/Restaurant";
 import { formatNumberWithCommas } from "~/utils/utils";
-import { json, LoaderFunctionArgs } from "@remix-run/node";
+import { json, LoaderFunctionArgs } from "@remix-run/cloudflare";
 import invariant from "tiny-invariant";
 // import { ClientOnly } from "remix-utils/client-only";
 

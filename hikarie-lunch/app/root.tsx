@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
-import { json, type MetaFunction } from "@remix-run/node";
+import { json, type MetaFunction } from "@remix-run/cloudflare";
 
 
 import "./tailwind.css";
