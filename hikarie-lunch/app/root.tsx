@@ -23,8 +23,8 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader = async ({ context }: LoaderFunctionArgs) => {
+  const env = context.cloudflare.env as Env;
   try {
-    const env = context.cloudflare.env as Env;
     const response = await fetch(`${env.HOST_NAME}/api/restaurants`);
     if (!response.ok) {
       throw new Response("Not Found", { status: 404 });
@@ -32,7 +32,7 @@ export const loader = async ({ context }: LoaderFunctionArgs) => {
     const restaurants: RestaurantForList[] = await response.json();
     return json({ restaurants });
   } catch (error) {
-    console.error("Error fetching restaurants");
+    console.error(`Error fetching restaurants: ${env.HOST_NAME}, ${error}`);
     return json({ restaurants: [] });
   }
 }
