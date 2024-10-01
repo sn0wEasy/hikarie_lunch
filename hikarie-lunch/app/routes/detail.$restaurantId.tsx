@@ -8,7 +8,7 @@ import invariant from "tiny-invariant";
 
 export const loader = async ({ params, context }: LoaderFunctionArgs) => {
     invariant(params.restaurantId, "Missing restaurantId param");
-    const env = context.cloudflare.env as Env;
+    const env = context.cloudflare.env;
     try {
         const response = await fetch(`${env.HOST_NAME}/api/restaurants/detail/${params.restaurantId}`);
         if (!response.ok) {
@@ -17,7 +17,7 @@ export const loader = async ({ params, context }: LoaderFunctionArgs) => {
         const detail: RestaurantForDetail = await response.json();
         return json({ detail });
     } catch (error) {
-        console.error("Error fetching restaurant detail");
+        console.error(`Error fetching restaurant detail: ${error}`);
         throw new Response("Error fetching restaurant detail", { status: 400 });
     }
 }

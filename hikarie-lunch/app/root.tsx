@@ -23,7 +23,7 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader = async ({ context }: LoaderFunctionArgs) => {
-  const env = context.cloudflare.env as Env;
+  const env = context.cloudflare.env;
   try {
     const response = await fetch(`${env.HOST_NAME}/api/restaurants`);
     if (!response.ok) {
@@ -32,7 +32,7 @@ export const loader = async ({ context }: LoaderFunctionArgs) => {
     const restaurants: RestaurantForList[] = await response.json();
     return json({ restaurants });
   } catch (error) {
-    console.error(`Error fetching restaurants: ${env.HOST_NAME}, ${error}`);
+    console.error(`Error fetching restaurants: ${error}`);
     return json({ restaurants: [] });
   }
 }
