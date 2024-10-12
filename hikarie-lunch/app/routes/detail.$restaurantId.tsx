@@ -100,7 +100,7 @@ export default function RestaurantDetail() {
                     </div>
                 ))}
 
-                <div className="flex mb-36">
+                <div className="flex mb-24">
                     <div className="flex flex-col w-1/2 mr-24">
                         <h2 className="text-xl font-bold mb-2">営業時間</h2>
                         <table className="w-full mb-4">
