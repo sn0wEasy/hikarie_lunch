@@ -14,6 +14,7 @@ import "./tailwind.css";
 import { RestaurantForList } from "./entity/Restaurant";
 import { Bubble, StarRatingComponent } from "./components/ui/components";
 import { formatNumberWithCommas } from "./utils/utils";
+import { useState } from "react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -33,7 +34,7 @@ export const loader = async ({ context }: LoaderFunctionArgs) => {
     return json({ restaurants });
   } catch (error) {
     console.error(`Error fetching restaurants: ${error}`);
-    return json({ restaurants: [] });
+    return json({ restaurants: [] as RestaurantForList[] });
   }
 }
 
@@ -79,6 +80,8 @@ const Header = () => {
 };
 
 const RestaurantList = ({ restaurants }: { restaurants: RestaurantForList[] }) => {
+  const [clickedRestaurantId, setClickedRestaurantId] = useState<string>("");
+
   return (
     <div className="w-1/3 h-screen px-4 pt-4 pb-2 bg-red-100  h-screen overflow-y-auto">
       <div className="text-2xl pb-2">飲食店一覧</div>
@@ -95,7 +98,7 @@ const RestaurantList = ({ restaurants }: { restaurants: RestaurantForList[] }) =
               }
               to={`detail/${restaurant.id}`}
             >
-              <RestaurantCard restaurant={restaurant} />
+              <RestaurantCard restaurant={restaurant} isClicked={clickedRestaurantId === restaurant.id} setClickedRestaurantId={setClickedRestaurantId} />
             </NavLink>
           </li>
         ))}
@@ -105,9 +108,22 @@ const RestaurantList = ({ restaurants }: { restaurants: RestaurantForList[] }) =
 }
 
 
-const RestaurantCard = ({ restaurant }: { restaurant: RestaurantForList }) => {
+interface RestaurantCardProps {
+  restaurant: RestaurantForList;
+  isClicked: boolean;
+  setClickedRestaurantId: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const RestaurantCard = ({ restaurant, isClicked, setClickedRestaurantId }: RestaurantCardProps) => {
+
+  const handleClick = () => {
+    setClickedRestaurantId(restaurant.id);
+  }
+
+  const cardStyle = `${isClicked ? "bg-[#F1E3A8]" : "bg-[#FFF8F6] cursor-pointer"} p-4 mb-2 rounded-lg shadow-md border border-black" : "p-4 mb-2 rounded-lg shadow-md border border-black"`;
+
   return (
-    <div className="bg-[#FFF8F6] p-4 mb-2 rounded-lg shadow-md border border-black">
+    <div className={cardStyle} onClick={handleClick}>
       <div className="flex items-start space-x-4">
         <img src={restaurant.thumbnailPhotoUrl} alt="Restaurant" className="w-36 h-36 object-cover rounded aspect-square" />
         <div className="flex flex-1 flex-col">
