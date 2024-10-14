@@ -84,7 +84,6 @@ const RestaurantList = ({ restaurants, className = "" }: { restaurants: Restaura
 
   return (
     <div className={`${className} px-4 pt-4 pb-2 bg-red-100`}>
-      <div className="text-2xl pb-2">飲食店一覧</div>
       <ul>
         {restaurants.map((restaurant) => (
           <li key={restaurant.id}>
