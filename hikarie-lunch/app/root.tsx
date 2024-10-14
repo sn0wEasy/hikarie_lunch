@@ -40,6 +40,8 @@ export const loader = async ({ context }: LoaderFunctionArgs) => {
 
 export default function App() {
   const { restaurants } = useLoaderData<typeof loader>();
+  const [isDetailPage, setIsDetailFlag] = useState<boolean>(false);
+
   return (
     <html lang="ja">
       <head>
@@ -49,25 +51,49 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="flex flex-col">
+        <div className="flex flex-col min-h-screen">
           <Header />
-          <div className="flex justify-between">
-            <RestaurantList restaurants={restaurants} />
-            <div className="w-2/3 h-screen px-4 py-4 bg-blue-100 overflow-y-auto">
-              <Outlet />
+          {/* PC版 */}
+          <div className="hidden xl:block">
+            <div className="flex flex-1">
+              <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 h-[calc(100vh-6rem)] overflow-y-auto" />
+              <div className="w-full xl:w-2/3 h-[calc(100vh-6rem)] px-4 py-4 bg-blue-100 overflow-y-auto">
+                <Outlet />
+              </div>
+            </div>
+          </div>
+          {/* モバイル版 */}
+          <div className="block xl:hidden">
+            <div className="flex flex-1 flex-col">
+              {isDetailPage ? (
+                <>
+                  <div className="py-2 bg-blue-100">
+                    <button onClick={() => setIsDetailFlag(false)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div className="w-full h-[calc(100vh-6rem)] px-4 pb-4 bg-blue-100 overflow-y-auto">
+                    <Outlet />
+                  </div>
+                </>
+              ) : (
+                <RestaurantList restaurants={restaurants} setIsDetailFlag={setIsDetailFlag} className="w-full h-[calc(100vh-6rem)] overflow-y-auto" />
+              )}
             </div>
           </div>
         </div>
         <ScrollRestoration />
         <Scripts />
       </body>
-    </html>
+    </html >
   );
 }
 
 const Header = () => {
   return (
-    <div className="px-4 pt-4 pb-2 bg-gray-800 text-white">
+    <div className="h-24 px-4 pt-4 pb-2 bg-gray-800 text-white">
       <NavLink to="/">
         <div className="text-4xl pb-2">Hikarie Workers Lunch</div>
       </NavLink>
@@ -79,12 +105,11 @@ const Header = () => {
   );
 };
 
-const RestaurantList = ({ restaurants }: { restaurants: RestaurantForList[] }) => {
+const RestaurantList = ({ restaurants, setIsDetailFlag, className = "" }: { restaurants: RestaurantForList[], setIsDetailFlag?: React.Dispatch<React.SetStateAction<boolean>>, className?: string }) => {
   const [clickedRestaurantId, setClickedRestaurantId] = useState<string>("");
 
   return (
-    <div className="w-1/3 h-screen px-4 pt-4 pb-2 bg-red-100 overflow-y-auto">
-      <div className="text-2xl pb-2">飲食店一覧</div>
+    <div className={`${className} px-4 pt-4 pb-2 bg-red-100`}>
       <ul>
         {restaurants.map((restaurant) => (
           <li key={restaurant.id}>
@@ -98,7 +123,7 @@ const RestaurantList = ({ restaurants }: { restaurants: RestaurantForList[] }) =
               }
               to={`detail/${restaurant.id}`}
             >
-              <RestaurantCard restaurant={restaurant} isClicked={clickedRestaurantId === restaurant.id} setClickedRestaurantId={setClickedRestaurantId} />
+              <RestaurantCard restaurant={restaurant} isClicked={clickedRestaurantId === restaurant.id} setClickedRestaurantId={setClickedRestaurantId} setIsDetailFlag={setIsDetailFlag} />
             </NavLink>
           </li>
         ))}
@@ -112,12 +137,16 @@ interface RestaurantCardProps {
   restaurant: RestaurantForList;
   isClicked: boolean;
   setClickedRestaurantId: React.Dispatch<React.SetStateAction<string>>;
+  setIsDetailFlag?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const RestaurantCard = ({ restaurant, isClicked, setClickedRestaurantId }: RestaurantCardProps) => {
+const RestaurantCard = ({ restaurant, isClicked, setClickedRestaurantId, setIsDetailFlag }: RestaurantCardProps) => {
 
   const handleClick = () => {
     setClickedRestaurantId(restaurant.id);
+    if (setIsDetailFlag !== undefined) {
+      setIsDetailFlag(true);
+    }
   }
 
   const cardStyle = `${isClicked ? "bg-[#F1E3A8]" : "bg-[#FFF8F6] cursor-pointer"} p-4 mb-2 rounded-lg shadow-md border border-black" : "p-4 mb-2 rounded-lg shadow-md border border-black"`;
