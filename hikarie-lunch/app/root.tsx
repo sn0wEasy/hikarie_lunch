@@ -49,11 +49,11 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="flex flex-col">
+        <div className="flex flex-col h-screen">
           <Header />
-          <div className="flex justify-between">
-            <RestaurantList restaurants={restaurants} />
-            <div className="w-2/3 h-screen px-4 py-4 bg-blue-100 overflow-y-auto">
+          <div className="flex">
+            <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3" />
+            <div className="w-full xl:w-2/3 h-screen px-4 py-4 bg-blue-100 overflow-y-auto">
               <Outlet />
             </div>
           </div>
@@ -79,11 +79,11 @@ const Header = () => {
   );
 };
 
-const RestaurantList = ({ restaurants }: { restaurants: RestaurantForList[] }) => {
+const RestaurantList = ({ restaurants, className = "" }: { restaurants: RestaurantForList[], className?: string }) => {
   const [clickedRestaurantId, setClickedRestaurantId] = useState<string>("");
 
   return (
-    <div className="w-1/3 h-screen px-4 pt-4 pb-2 bg-red-100 overflow-y-auto">
+    <div className={`${className} h-screen px-4 pt-4 pb-2 bg-red-100 overflow-y-auto`}>
       <div className="text-2xl pb-2">飲食店一覧</div>
       <ul>
         {restaurants.map((restaurant) => (
