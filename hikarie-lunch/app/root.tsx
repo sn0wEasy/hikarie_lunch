@@ -51,9 +51,9 @@ export default function App() {
       <body>
         <div className="flex flex-col h-screen">
           <Header />
-          <div className="flex">
-            <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3" />
-            <div className="w-full xl:w-2/3 h-screen px-4 py-4 bg-blue-100 overflow-y-auto">
+          <div className="flex h-[89%]">
+            <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 overflow-y-auto" />
+            <div className="w-full xl:w-2/3 px-4 py-4 bg-blue-100 overflow-y-auto">
               <Outlet />
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function App() {
 
 const Header = () => {
   return (
-    <div className="px-4 pt-4 pb-2 bg-gray-800 text-white">
+    <div className="h-[11%] px-4 pt-4 pb-2 bg-gray-800 text-white">
       <NavLink to="/">
         <div className="text-4xl pb-2">Hikarie Workers Lunch</div>
       </NavLink>
@@ -83,7 +83,7 @@ const RestaurantList = ({ restaurants, className = "" }: { restaurants: Restaura
   const [clickedRestaurantId, setClickedRestaurantId] = useState<string>("");
 
   return (
-    <div className={`${className} h-screen px-4 pt-4 pb-2 bg-red-100 overflow-y-auto`}>
+    <div className={`${className} px-4 pt-4 pb-2 bg-red-100`}>
       <div className="text-2xl pb-2">飲食店一覧</div>
       <ul>
         {restaurants.map((restaurant) => (

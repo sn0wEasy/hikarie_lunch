@@ -26,7 +26,7 @@ export const loader = async ({ params, context }: LoaderFunctionArgs) => {
 export default function RestaurantDetail() {
     const { detail } = useLoaderData<typeof loader>();
     return (
-        <div className="max-w-4xl mx-auto bg-[#FFF8F6] shadow-lg rounded-lg overflow-hidden h-screen overflow-y-auto">
+        <div className="max-w-4xl mx-auto bg-[#FFF8F6] shadow-lg rounded-lg">
             <div className="p-4">
                 <div className="flex items-center mb-2">
                     <h1 className="text-2xl font-bold">{detail.displayName}</h1>
