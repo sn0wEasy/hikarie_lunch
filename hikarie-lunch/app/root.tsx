@@ -49,11 +49,11 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col min-h-screen">
           <Header />
-          <div className="flex h-[89%]">
-            <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 overflow-y-auto" />
-            <div className="w-full xl:w-2/3 px-4 py-4 bg-blue-100 overflow-y-auto">
+          <div className="flex flex-1">
+            <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 h-[calc(100vh-6rem)] overflow-y-auto" />
+            <div className="w-full xl:w-2/3 h-[calc(100vh-6rem)] px-4 py-4 bg-blue-100 overflow-y-auto">
               <Outlet />
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function App() {
 
 const Header = () => {
   return (
-    <div className="h-[11%] px-4 pt-4 pb-2 bg-gray-800 text-white">
+    <div className="h-24 px-4 pt-4 pb-2 bg-gray-800 text-white">
       <NavLink to="/">
         <div className="text-4xl pb-2">Hikarie Workers Lunch</div>
       </NavLink>
