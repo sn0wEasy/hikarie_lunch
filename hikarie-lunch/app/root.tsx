@@ -54,35 +54,9 @@ export default function App() {
         <div className="flex flex-col min-h-screen">
           <Header />
           {/* PC版 */}
-          <div className="hidden xl:block">
-            <div className="flex flex-1">
-              <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 h-[calc(100vh-6rem)] overflow-y-auto" />
-              <div className="w-full xl:w-2/3 h-[calc(100vh-6rem)] px-4 py-4 bg-blue-100 overflow-y-auto">
-                <Outlet />
-              </div>
-            </div>
-          </div>
+          {RestaurantListForWeb(restaurants)}
           {/* モバイル版 */}
-          <div className="block xl:hidden">
-            <div className="flex flex-1 flex-col">
-              {isDetailPage ? (
-                <>
-                  <div className="py-2 bg-blue-100">
-                    <button onClick={() => setIsDetailFlag(false)}>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div className="w-full h-[calc(100vh-6rem)] px-4 pb-4 bg-blue-100 overflow-y-auto">
-                    <Outlet />
-                  </div>
-                </>
-              ) : (
-                <RestaurantList restaurants={restaurants} setIsDetailFlag={setIsDetailFlag} className="w-full h-[calc(100vh-6rem)] overflow-y-auto" />
-              )}
-            </div>
-          </div>
+          {RestaurantListForMobile(isDetailPage, setIsDetailFlag, restaurants)}
         </div>
         <ScrollRestoration />
         <Scripts />
@@ -195,4 +169,38 @@ const RestaurantCard = ({ restaurant, isClicked, setClickedRestaurantId, setIsDe
     </div>
   );
 };
+
+function RestaurantListForMobile(isDetailPage: boolean, setIsDetailFlag: React.Dispatch<React.SetStateAction<boolean>>, restaurants: ({ readonly id: string; readonly placeId: string; readonly displayName: string; readonly thumbnailPhotoUrl: string; readonly rating: number; readonly userRatingCount: number; readonly purposeLunch: boolean; readonly purposeDinner: boolean; readonly purposeCafe: boolean; readonly openingDays: { readonly monday: boolean; readonly tuesday: boolean; readonly wednesday: boolean; readonly thursday: boolean; readonly friday: boolean; readonly saturday: boolean; readonly sunday: boolean; } & {}; } & {})[]) {
+  return <div className="block xl:hidden">
+    <div className="flex flex-1 flex-col">
+      {isDetailPage ? (
+        <>
+          <div className="py-2 bg-blue-100">
+            <button onClick={() => setIsDetailFlag(false)}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+          </div>
+          <div className="w-full h-[calc(100vh-6rem)] px-4 pb-4 bg-blue-100 overflow-y-auto">
+            <Outlet />
+          </div>
+        </>
+      ) : (
+        <RestaurantList restaurants={restaurants} setIsDetailFlag={setIsDetailFlag} className="w-full h-[calc(100vh-6rem)] overflow-y-auto" />
+      )}
+    </div>
+  </div>;
+}
+
+function RestaurantListForWeb(restaurants: ({ readonly id: string; readonly placeId: string; readonly displayName: string; readonly thumbnailPhotoUrl: string; readonly rating: number; readonly userRatingCount: number; readonly purposeLunch: boolean; readonly purposeDinner: boolean; readonly purposeCafe: boolean; readonly openingDays: { readonly monday: boolean; readonly tuesday: boolean; readonly wednesday: boolean; readonly thursday: boolean; readonly friday: boolean; readonly saturday: boolean; readonly sunday: boolean; } & {}; } & {})[]) {
+  return <div className="hidden xl:block">
+    <div className="flex flex-1">
+      <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 h-[calc(100vh-6rem)] overflow-y-auto" />
+      <div className="w-full xl:w-2/3 h-[calc(100vh-6rem)] px-4 py-4 bg-blue-100 overflow-y-auto">
+        <Outlet />
+      </div>
+    </div>
+  </div>;
+}
 

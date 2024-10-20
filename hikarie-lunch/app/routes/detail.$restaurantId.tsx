@@ -4,7 +4,6 @@ import { OpeningHour, PriceLevel, RestaurantForDetail } from "~/entity/Restauran
 import { formatNumberWithCommas } from "~/utils/utils";
 import { json, LoaderFunctionArgs } from "@remix-run/cloudflare";
 import invariant from "tiny-invariant";
-// import { ClientOnly } from "remix-utils/client-only";
 
 export const loader = async ({ params, context }: LoaderFunctionArgs) => {
     invariant(params.restaurantId, "Missing restaurantId param");
@@ -53,7 +52,7 @@ export default function RestaurantDetail() {
                     <span>カフェ {detail.purposeCafe ? "○" : "-"}</span>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mb-4">
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mb-4">
                     <div className="md:col-span-2 md:row-span-2 aspect-[4/3]">
                         <img src={detail.photoUrls[0]} alt="Main" className="w-full h-full object-cover rounded" />
                     </div>
@@ -68,6 +67,9 @@ export default function RestaurantDetail() {
                     </div>
                     <div className="aspect-[4/3]">
                         <img src={detail.photoUrls[4]} alt="Sub 4" className="w-full h-full object-cover rounded" />
+                    </div>
+                    <div className="aspect-[4/3] md:hidden">
+                        <img src={detail.photoUrls[5]} alt="Sub 5" className="w-full h-full object-cover rounded" />
                     </div>
                 </div>
 
@@ -114,10 +116,6 @@ export default function RestaurantDetail() {
                             </tbody>
                         </table>
                     </div>
-
-                    {/* <ClientOnly fallback={<div>Loading</div>}>
-                        {() => <GoogleMapComponent />}
-                    </ClientOnly> */}
                 </div>
             </div>
         </div>
