@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useNavigation,
 } from "@remix-run/react";
 import { json, LoaderFunctionArgs, type MetaFunction } from "@remix-run/cloudflare";
 
@@ -15,6 +16,7 @@ import { RestaurantForList } from "./entity/Restaurant";
 import { Bubble, StarRatingComponent } from "./components/ui/components";
 import { formatNumberWithCommas } from "./utils/utils";
 import { useState } from "react";
+import { LoadingRippleAnimation } from "./components/ui/LoadingRippleAnimation";
 
 export const meta: MetaFunction = () => {
   return [
@@ -183,9 +185,12 @@ const RestaurantCard = ({ restaurant, isClicked, setClickedRestaurantId, setIsDe
   );
 };
 
-function RestaurantListForMobile(isDetailPage: boolean, setIsDetailFlag: React.Dispatch<React.SetStateAction<boolean>>, restaurants: ({ readonly id: string; readonly placeId: string; readonly displayName: string; readonly thumbnailPhotoUrl: string; readonly rating: number; readonly userRatingCount: number; readonly purposeLunch: boolean; readonly purposeDinner: boolean; readonly purposeCafe: boolean; readonly openingDays: { readonly monday: boolean; readonly tuesday: boolean; readonly wednesday: boolean; readonly thursday: boolean; readonly friday: boolean; readonly saturday: boolean; readonly sunday: boolean; } & {}; } & {})[]) {
+const RestaurantListForMobile = (isDetailPage: boolean, setIsDetailFlag: React.Dispatch<React.SetStateAction<boolean>>, restaurants: ({ readonly id: string; readonly placeId: string; readonly displayName: string; readonly thumbnailPhotoUrl: string; readonly rating: number; readonly userRatingCount: number; readonly purposeLunch: boolean; readonly purposeDinner: boolean; readonly purposeCafe: boolean; readonly openingDays: { readonly monday: boolean; readonly tuesday: boolean; readonly wednesday: boolean; readonly thursday: boolean; readonly friday: boolean; readonly saturday: boolean; readonly sunday: boolean; } & {}; } & {})[]) => {
+  const navigation = useNavigation();
+
   return (
     <>
+
       <div className="block xl:hidden">
         <HeaderForMobile />
         <div className="flex flex-1 flex-col">
@@ -199,26 +204,38 @@ function RestaurantListForMobile(isDetailPage: boolean, setIsDetailFlag: React.D
                 </button>
               </div>
               <div className="w-full h-[calc(100vh-6rem)] px-4 pb-4 bg-blue-100">
-                <Outlet />
+                {
+                  navigation.state === "loading" ?
+                    <LoadingRippleAnimation /> : <Outlet />
+                }
               </div>
             </>
           ) : (
             <RestaurantList restaurants={restaurants} setIsDetailFlag={setIsDetailFlag} className="w-full h-[calc(100vh-6rem)]" />
           )}
+
         </div>
       </div>
     </>);
 }
 
-function RestaurantListForWeb(restaurants: ({ readonly id: string; readonly placeId: string; readonly displayName: string; readonly thumbnailPhotoUrl: string; readonly rating: number; readonly userRatingCount: number; readonly purposeLunch: boolean; readonly purposeDinner: boolean; readonly purposeCafe: boolean; readonly openingDays: { readonly monday: boolean; readonly tuesday: boolean; readonly wednesday: boolean; readonly thursday: boolean; readonly friday: boolean; readonly saturday: boolean; readonly sunday: boolean; } & {}; } & {})[]) {
-  return <div className="hidden xl:block">
-    <HeaderForWeb />
-    <div className="flex flex-1">
-      <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 h-[calc(100vh-6rem)] overflow-y-auto" />
-      <div className="w-full xl:w-2/3 h-[calc(100vh-6rem)] px-4 py-4 bg-blue-100 overflow-y-auto">
-        <Outlet />
+const RestaurantListForWeb = (restaurants: ({ readonly id: string; readonly placeId: string; readonly displayName: string; readonly thumbnailPhotoUrl: string; readonly rating: number; readonly userRatingCount: number; readonly purposeLunch: boolean; readonly purposeDinner: boolean; readonly purposeCafe: boolean; readonly openingDays: { readonly monday: boolean; readonly tuesday: boolean; readonly wednesday: boolean; readonly thursday: boolean; readonly friday: boolean; readonly saturday: boolean; readonly sunday: boolean; } & {}; } & {})[]) => {
+  const navigation = useNavigation();
+
+  return (
+
+    <div className="hidden xl:block">
+      <HeaderForWeb />
+      <div className="flex flex-1">
+        <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 h-[calc(100vh-6rem)] overflow-y-auto" />
+        <div className="w-full xl:w-2/3 h-[calc(100vh-6rem)] px-4 py-4 bg-blue-100 overflow-y-auto">
+          {
+            navigation.state === "loading" ?
+              <LoadingRippleAnimation /> : <Outlet />
+          }
+        </div>
       </div>
     </div>
-  </div>;
+  );
 }
 
