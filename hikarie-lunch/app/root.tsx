@@ -203,15 +203,17 @@ const RestaurantListForMobile = (isDetailPage: boolean, setIsDetailFlag: React.D
                   </svg>
                 </button>
               </div>
-              <div className="w-full h-[calc(100vh-6rem)] px-4 pb-4 bg-blue-100">
+              <div className="w-full h-full px-4 pb-4 bg-blue-100">
                 {
                   navigation.state === "loading" ?
-                    <LoadingRippleAnimation /> : <Outlet />
+                    <LoadingRippleAnimation />
+                    :
+                    <Outlet />
                 }
               </div>
             </>
           ) : (
-            <RestaurantList restaurants={restaurants} setIsDetailFlag={setIsDetailFlag} className="w-full h-[calc(100vh-6rem)]" />
+            <RestaurantList restaurants={restaurants} setIsDetailFlag={setIsDetailFlag} className="w-full h-full" />
           )}
 
         </div>
