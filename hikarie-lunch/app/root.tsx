@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useNavigation,
 } from "@remix-run/react";
 import { json, LoaderFunctionArgs, type MetaFunction } from "@remix-run/cloudflare";
 
@@ -15,6 +16,7 @@ import { RestaurantForList } from "./entity/Restaurant";
 import { Bubble, StarRatingComponent } from "./components/ui/components";
 import { formatNumberWithCommas } from "./utils/utils";
 import { useState } from "react";
+import { LoadingRippleAnimation } from "./components/ui/LoadingRippleAnimation";
 
 export const meta: MetaFunction = () => {
   return [
@@ -40,6 +42,8 @@ export const loader = async ({ context }: LoaderFunctionArgs) => {
 
 export default function App() {
   const { restaurants } = useLoaderData<typeof loader>();
+  const [isDetailPage, setIsDetailFlag] = useState<boolean>(false);
+
   return (
     <html lang="ja">
       <head>
@@ -49,61 +53,71 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="flex flex-col">
-          <Header />
-          <div className="flex justify-between">
-            <RestaurantList restaurants={restaurants} />
-            <div className="w-2/3 h-screen px-4 py-4 bg-blue-100 overflow-y-auto">
-              <Outlet />
-            </div>
-          </div>
+        <div className="flex flex-col min-h-screen">
+          {/* PC版 */}
+          {RestaurantListForWeb(restaurants)}
+          {/* モバイル版 */}
+          {RestaurantListForMobile(isDetailPage, setIsDetailFlag, restaurants)}
         </div>
         <ScrollRestoration />
         <Scripts />
       </body>
-    </html>
+    </html >
   );
 }
 
-const Header = () => {
+const HeaderForWeb = () => {
   return (
-    <div className="px-4 pt-4 pb-2 bg-gray-800 text-white">
+    <div className="h-24 px-4 pt-4 pb-2 bg-gray-800 text-white">
       <NavLink to="/">
         <div className="text-4xl pb-2">Hikarie Workers Lunch</div>
       </NavLink>
       <div className="flex justify-between">
         <div className="text-xs">ヒカリエで働くひとのための、いい感じの飲食店がわかるサイト。</div>
-        {/* <div className="text-xs">このサービスについて</div> */}
       </div>
     </div>
   );
 };
 
-const RestaurantList = ({ restaurants }: { restaurants: RestaurantForList[] }) => {
+const HeaderForMobile = () => {
+  return (
+    <div className="h-24 px-4 pt-4 pb-2 bg-gray-800 text-white">
+      <NavLink to="/">
+        <div className="text-4xl pb-2">Hikarie Workers Lunch</div>
+      </NavLink>
+      <div className="flex justify-between">
+        <div className="text-xs">ヒカリエで働くひとのための、いい感じの飲食店がわかるサイト。</div>
+      </div>
+    </div>
+  );
+};
+
+const RestaurantList = ({ restaurants, setIsDetailFlag, className = "" }: { restaurants: RestaurantForList[], setIsDetailFlag?: React.Dispatch<React.SetStateAction<boolean>>, className?: string }) => {
   const [clickedRestaurantId, setClickedRestaurantId] = useState<string>("");
 
   return (
-    <div className="w-1/3 h-screen px-4 pt-4 pb-2 bg-red-100 overflow-y-auto">
-      <div className="text-2xl pb-2">飲食店一覧</div>
-      <ul>
-        {restaurants.map((restaurant) => (
-          <li key={restaurant.id}>
-            <NavLink
-              className={({ isActive, isPending }) =>
-                isActive
-                  ? "active"
-                  : isPending
-                    ? "pending"
-                    : ""
-              }
-              to={`detail/${restaurant.id}`}
-            >
-              <RestaurantCard restaurant={restaurant} isClicked={clickedRestaurantId === restaurant.id} setClickedRestaurantId={setClickedRestaurantId} />
-            </NavLink>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className={`${className} px-4 pt-4 pb-2 bg-red-100`}>
+        <ul>
+          {restaurants.map((restaurant) => (
+            <li key={restaurant.id}>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isActive
+                    ? "active"
+                    : isPending
+                      ? "pending"
+                      : ""
+                }
+                to={`detail/${restaurant.id}`}
+              >
+                <RestaurantCard restaurant={restaurant} isClicked={clickedRestaurantId === restaurant.id} setClickedRestaurantId={setClickedRestaurantId} setIsDetailFlag={setIsDetailFlag} />
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }
 
@@ -112,12 +126,16 @@ interface RestaurantCardProps {
   restaurant: RestaurantForList;
   isClicked: boolean;
   setClickedRestaurantId: React.Dispatch<React.SetStateAction<string>>;
+  setIsDetailFlag?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const RestaurantCard = ({ restaurant, isClicked, setClickedRestaurantId }: RestaurantCardProps) => {
+const RestaurantCard = ({ restaurant, isClicked, setClickedRestaurantId, setIsDetailFlag }: RestaurantCardProps) => {
 
   const handleClick = () => {
     setClickedRestaurantId(restaurant.id);
+    if (setIsDetailFlag !== undefined) {
+      setIsDetailFlag(true);
+    }
   }
 
   const cardStyle = `${isClicked ? "bg-[#F1E3A8]" : "bg-[#FFF8F6] cursor-pointer"} p-4 mb-2 rounded-lg shadow-md border border-black" : "p-4 mb-2 rounded-lg shadow-md border border-black"`;
@@ -166,4 +184,60 @@ const RestaurantCard = ({ restaurant, isClicked, setClickedRestaurantId }: Resta
     </div>
   );
 };
+
+const RestaurantListForMobile = (isDetailPage: boolean, setIsDetailFlag: React.Dispatch<React.SetStateAction<boolean>>, restaurants: ({ readonly id: string; readonly placeId: string; readonly displayName: string; readonly thumbnailPhotoUrl: string; readonly rating: number; readonly userRatingCount: number; readonly purposeLunch: boolean; readonly purposeDinner: boolean; readonly purposeCafe: boolean; readonly openingDays: { readonly monday: boolean; readonly tuesday: boolean; readonly wednesday: boolean; readonly thursday: boolean; readonly friday: boolean; readonly saturday: boolean; readonly sunday: boolean; } & {}; } & {})[]) => {
+  const navigation = useNavigation();
+
+  return (
+    <>
+
+      <div className="block xl:hidden">
+        <HeaderForMobile />
+        <div className="flex flex-1 flex-col">
+          {isDetailPage ? (
+            <>
+              <div className="py-2 bg-blue-100">
+                <button onClick={() => setIsDetailFlag(false)}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              </div>
+              <div className="w-full h-full px-4 pb-4 bg-blue-100">
+                {
+                  navigation.state === "loading" ?
+                    <LoadingRippleAnimation />
+                    :
+                    <Outlet />
+                }
+              </div>
+            </>
+          ) : (
+            <RestaurantList restaurants={restaurants} setIsDetailFlag={setIsDetailFlag} className="w-full h-full" />
+          )}
+
+        </div>
+      </div>
+    </>);
+}
+
+const RestaurantListForWeb = (restaurants: ({ readonly id: string; readonly placeId: string; readonly displayName: string; readonly thumbnailPhotoUrl: string; readonly rating: number; readonly userRatingCount: number; readonly purposeLunch: boolean; readonly purposeDinner: boolean; readonly purposeCafe: boolean; readonly openingDays: { readonly monday: boolean; readonly tuesday: boolean; readonly wednesday: boolean; readonly thursday: boolean; readonly friday: boolean; readonly saturday: boolean; readonly sunday: boolean; } & {}; } & {})[]) => {
+  const navigation = useNavigation();
+
+  return (
+
+    <div className="hidden xl:block">
+      <HeaderForWeb />
+      <div className="flex flex-1">
+        <RestaurantList restaurants={restaurants} className="hidden xl:block xl:w-1/3 h-[calc(100vh-6rem)] overflow-y-auto" />
+        <div className="w-full xl:w-2/3 h-[calc(100vh-6rem)] px-4 py-4 bg-blue-100 overflow-y-auto">
+          {
+            navigation.state === "loading" ?
+              <LoadingRippleAnimation /> : <Outlet />
+          }
+        </div>
+      </div>
+    </div>
+  );
+}
 
